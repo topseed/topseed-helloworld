@@ -19,6 +19,10 @@ to design and develop cutting edge web apps.
 We welcome scrutiny and feedback from anyone who tries to follow our approaches. 
 We also welcome code contributions from seasoned designers and developers
 
+### pre-req
+
+Before starting you should know Sass; pre-processing and Pug, used for SPA.
+
 # Getting started w/ a 'hello world':
 
 - Download
