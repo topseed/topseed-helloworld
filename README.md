@@ -34,3 +34,5 @@ Now open browser on port 8080.
 If you add ?w=1 you get www page, else it is mobile. 
 
 For forum: http://gitter.im/topseed-demos/Lobbyy
+
+For more: http://github.com/topseed/topseed-demos
