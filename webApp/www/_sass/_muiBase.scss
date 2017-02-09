@@ -82,7 +82,7 @@ body {
 }
 
 #menu li:hover, #menu li:hover * {
-	color: $primary-color-text !;
+	color: $primary-color-text;
 	background-color: $accent-color;
 	cursor: pointer;
 }
