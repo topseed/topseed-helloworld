@@ -1,15 +1,26 @@
+extends  ../../_part/_baseShellS
 
-extends  ../../_part/_shellA-base
+block head
+	include ../../_part/_headerS
 
-block content
+block top
+	include ../../_part/_topS
+
+block main
 	.mui-container-fluid
-		include story2.html
+		include one.html
 
-		script.
+	script.
+		function init() {
+		}
+
+		if(_loaded) init()
+		else {
 			_act.addOnce(function(arg1, arg2) {
-				console.log('t'+arg1, arg2)
+				init()
 				return false
 			})
+		}
 
 block footer
-	include  ../../_part/_footer
+	include ../../_part/_footerS

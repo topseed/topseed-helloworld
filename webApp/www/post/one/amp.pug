@@ -1,15 +1,16 @@
+extends  ../../_part/_baseShellA
 
-extends  ../../_part/_shellA-base
+block head
+	include ../../_part/_headerA
 
-block content
+	link(rel='canonical', href='https://www.masons-foundation.org/train/homeReact2Polymer/')
+
+block top
+	include ../../_part/_topA
+
+block main
 	.mui-container-fluid
-		include story1.html
-
-	script.
-		_act.addOnce(function(arg1, arg2) {
-			console.log('o'+arg1, arg2)
-			return false
-		})
+		include one.html
 
 block footer
-	include  ../../_part/_footer
+	include ../../_part/_footerA
