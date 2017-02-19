@@ -19,14 +19,6 @@ to design and develop cutting edge web apps.
 We welcome scrutiny and feedback from anyone who tries to follow our approaches. 
 We also welcome code contributions from seasoned designers and developers
 
-
-## Getting started w/ a 'hello world':
-
-- Download
-- $cd webApp
-- $npm install
-- $node index
-
 ## Some best practiced demonstrated:
 - SPA
 - Designer friendly
@@ -37,8 +29,17 @@ We also welcome code contributions from seasoned designers and developers
 - Mostly static (easy to maintain/develop and scale)
 
 
+## Getting started w/ a 'hello world':
+
+- Download
+- $cd webApp
+- $npm install
+- $node index
+
 Now open browser on port 8081.
-If you add ?w=1 you get www page, else it is mobile. 
+If you add ?w=1 you get www page, else it is mobile|AMP.
+
+You can easily deploy to ZEIT, D.O> or such.
 
 For forum: http://gitter.im/topseed-demos/Lobbyy
 

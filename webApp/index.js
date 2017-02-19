@@ -1,8 +1,6 @@
 'use strict'
 const express = require('express')
 const server = express()
-const cors = require('cors')
-const compression = require('compression')
 
 const membersAmp = require('./route/membersAmp')
 const AFilter = require('./util/AFilter')
