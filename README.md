@@ -1,4 +1,4 @@
-## TopSeed
+# TopSeed
 
 TopSeed aims to be a showcase of best practices and approaches for developers and designers
 who want to build stunning mobile-first web apps with some of the best technologies
@@ -19,18 +19,25 @@ to design and develop cutting edge web apps.
 We welcome scrutiny and feedback from anyone who tries to follow our approaches. 
 We also welcome code contributions from seasoned designers and developers
 
-### pre-req
 
-Before starting you should know Sass; pre-processing and Pug, used for SPA.
-
-# Getting started w/ a 'hello world':
+## Getting started w/ a 'hello world':
 
 - Download
 - $cd webApp
 - $npm install
 - $node index
 
-Now open browser on port 8080.
+## Some best practiced demonstrated:
+- SPA
+- Designer friendly
+- SPA w/ SEO
+- SPA and AMP
+- Server side data-binding and in-browser data binding
+- Loosely coupled to architectures
+- Mostly static (easy to maintain/develop and scale)
+
+
+Now open browser on port 8081.
 If you add ?w=1 you get www page, else it is mobile. 
 
 For forum: http://gitter.im/topseed-demos/Lobbyy

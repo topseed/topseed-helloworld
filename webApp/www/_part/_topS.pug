@@ -1,0 +1,28 @@
+script(type='text/javascript').
+	document.body.style.opacity = '0.7'
+
+nav#appbar.mui-container-fluid.mui--no-user-select
+	table(width='100%')
+		tr
+			td
+				#brand ☰ &nbsp;
+					span.mui--hidden-xs My APP
+			td.mui--text-right
+				ul#menu.mui-list--inline
+					li
+						a(href='/post/one/') One
+					li
+						a(href='/post/two/') Two
+					li &nbsp;
+
+#sidedrawer
+	nav#sidenav.mui--no-user-select
+		h2
+			#sidedrawer-brand.mui--text-title ☰ &nbsp; My APP
+		.mui-divider
+		ul.mui-list--unstyled#sidenavstrong
+			li
+				a(href='/post/one/') One
+			li
+				a(href='/post/two/') Two
+

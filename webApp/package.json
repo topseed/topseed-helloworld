@@ -1,5 +1,5 @@
 {
-	"name": "topseed",
+	"name": "demos",
 	"version": "0.1.0",
 	"private": true,
 	"engines": 
@@ -7,7 +7,9 @@
 		 "npm": ">=4.1"
 		},
 	"comment_only": "// npm-check-updates -u",
-
+	"scripts": {
+		"start": "node index"
+	},
 	"dependencies": { 
 		"express": ">=4.1"
 		, "cors": ">=2.8"
@@ -16,10 +18,12 @@
 		, "node-fetch": ">=1.6"
 		, "is_js": ">=0.9"
 		, "jsonwebtoken": ">= 7.2"
-
 		, "useragent": ">=2.1"
+
 		, "jsrender": ">=0.9"
 		, "server-components": ">=0.2"
+
+		, "mailgun-js": ">=0.8"
 
 	}
 }
