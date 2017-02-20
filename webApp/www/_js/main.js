@@ -2,21 +2,11 @@
 
 loadjs.ready(['dependencyNotChrome', 'keyLibs'], {// loaded setup libs
 	success: function(){
-	//console.log('loading libs')
 	loadjs([
 		//dbind:
-		'/_js/libJs/jquery.jsForm.min.js'
-		,'/_js/libJs/jsrender.min.js'
+		'https://www.masons-foundation.org/_js/libJs/jquery.jsForm.min.js'
 
-		,'/_js/libJs/jquery.fullpage.min.js'
 		,'//cdn.jsdelivr.net/jquery.transit/0.9.12/jquery.transit.min.js'
-		//'//cdn.jsdelivr.net/jquery.cookie/1.4.1/jquery.cookie.min.js'
-		//,'/zCDN/libJs/zingtouch.min.js'
-
-		//dbind moar:
-		,'//cdn.jsdelivr.net/jquery.datatables/1.10.10/js/jquery.dataTables.min.js'
-		//,'//cdn.jsdelivr.net/jquery.datatables/1.10.10/css/jquery.dataTables.min.css'
-		,'/_js/libJs/raphael.min.js'
 
 		], { success: function(){
 			console.log('loaded libs')
@@ -25,7 +15,6 @@ loadjs.ready(['dependencyNotChrome', 'keyLibs'], {// loaded setup libs
 	})//loadjs
 	}//suc
 })
-
 
 //====================================================================
 function startApp(){
@@ -38,22 +27,7 @@ function startApp(){
 	A.act(A.LOADED)
 
 	var $body=$('body')
-	$body.fadeTo(20,1)//shell sets it to 0
-
-	//>===============================================================
-	function toggleSide(){
-		console.log('tog')
-		var $sidedrawer=$('#sidedrawer')
-		$sidedrawer.toggleClass('active')
-	}
-	function initSideDraw() {
-		console.log('initSD')
-		setTimeout(function(){
-			$('#brand').on('click', toggleSide)
-			$('#sidedrawer').on('click', toggleSide)
-		}, 200)
-	}
-	initSideDraw()
+	$body.fadeTo(20,1)
 
 	//>====================================================================
 	//SS
@@ -87,7 +61,6 @@ function startApp(){
 	
 	const smoothState= $('#ss1').smoothState(ssoptions)
 
-	let endTime = (new Date()).getTime() - _loadStarted
-	console.log('load time ' + endTime)
 }//startApp()
+
 //====================================================================
