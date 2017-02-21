@@ -26,9 +26,7 @@ function startApp(){
 	A.loaded=true
 	A.act(A.LOADED)
 
-	var $body=$('body')
-	$body.fadeTo(20,1)
-
+	console.log('v17.02a')
 	//>====================================================================
 	//SS
 	let ssoptions={
@@ -40,20 +38,23 @@ function startApp(){
 		onStart: {
 			duration: 0, 
 			render: function (url, $container)  {
-				A.inAction=true
 				//console.log('-> ')
 				A.act(A.PRE) //action
-				$('#content-wrapper').fadeTo(100,.2)
+				A.inAction=true
+
+				$('#content-wrapper1').fadeTo(1000/60,.2)
 
 			}//r
 		},//onS
 		onReady: {
 			duration: 0,
 			render: function ($container, $newContent) {
-				$('#content-wrapper').fadeTo(200,1)
+				$container.html($newContent)
+				$('content-wrapper1').fadeTo(1000/30,1)
 
-				A.inAction= false
 				A.act(A.PAGE)// main action
+				A.inAction= false
+
 				//console.log('% <-')
 			}//ren
 		}//ready()
