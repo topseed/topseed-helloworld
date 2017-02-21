@@ -12,35 +12,45 @@ productive and creative. And that we know to be maintainable. And that we expect
 to be future-safe.
 
 Architecture is like a kindergarden: we put the shoes here, the jackets over there,
-and now we know where to find things. That made it very successful in its time.
-We DO aim to follow this great legacy, and propose approaches that make it easy
+and now we know where to find things. We propose approaches that make it easy
 to design and develop cutting edge web apps.
 
 We welcome scrutiny and feedback from anyone who tries to follow our approaches. 
 We also welcome code contributions from seasoned designers and developers
 
 ## Some best practiced demonstrated:
-- SPA
+- Single Page Application (SPA)
 - Designer friendly
-- SPA w/ SEO
+- SPA with SEO
 - SPA and AMP
 - Server side data-binding and in-browser data binding
 - Loosely coupled to architectures
 - Mostly static (easy to maintain/develop and scale)
 
 
-## Getting started w/ a 'hello world':
+## Getting started with a 'hello world':
 
-- Download
-- $cd webApp
-- $npm install
-- $node index
+To run:
+- install node.js with NPM from https://nodejs.org, unless you already have it
+- Download and unzip this project
+- Open a command prompt in the project root and execute the following commands:
+$cd webApp
+$npm install (Note: this may take a moment to respond)
+$node index
 
-Now open browser on port 8081.
-If you add ?w=1 you get www page, else it is mobile|AMP.
+Now open your favorite browser on localhost:8081 (or any other port proposed by the console)
+If you add ?w=1 to the URL you get www page, else it is mobile/AMP. In production, we use subdomains www./m.
+to differentiate versions.
 
-You can easily deploy to ZEIT, D.O> or such.
+To edit:
+- run as above
+- install Prepros from https://prepros.io and run it
+- Click bottom left + and add the project root as a project
+- Use any text or code editor to edit webApp/www/post/one/story1.md and save. Prepros compiles the markdown file.
+- Refresh the browser and see the change you made.
 
-For forum: http://gitter.im/topseed-demos/Lobbyy
+Explore https://zeit.co, our preferred way to deploy to the web. We also like Digital Ocean.
+
+For forum: http://gitter.im/topseed-demos/Lobby
 
 For more: http://github.com/topseed/topseed-demos
