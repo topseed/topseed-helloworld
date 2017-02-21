@@ -2,10 +2,10 @@
 const express = require('express')
 const server = express()
 
-const AFilter = require('./util/AFilter')
+const Decider = require('./util/Decider')
 
 // ###################### static
-server.use(AFilter.filter) //amp
+server.use(Decider.decide) //amp
 server.use(express.static('www'))
 
 //###################### start the server

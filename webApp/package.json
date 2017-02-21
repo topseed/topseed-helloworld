@@ -20,8 +20,8 @@
 		, "jsonwebtoken": ">= 7.2"
 
 		, "useragent": ">=2.1"
-
-		, "mailgun-js": ">=0.8"
+		, "riot": ">=3.2"
+		, "cheerio": ">=0.22"
 
 	}
 }
