@@ -33,10 +33,10 @@ We also welcome code contributions from seasoned designers and developers
 To run:
 - install node.js with NPM from https://nodejs.org, unless you already have it
 - Download and unzip this project
-- Open a command prompt in the project root and execute the following commands:
-$cd webApp
-$npm install (Note: this may take a moment to respond)
-$node index
+- Open a command prompt in the project root and execute the following commands:  
+$cd webApp  
+$npm install (Note: this may take a moment to respond)  
+$node index    
 
 Now open your favorite browser on localhost:8081 (or any other port proposed by the console)
 If you add ?w=1 to the URL you get www page, else it is mobile/AMP. In production, we use subdomains www./m.
