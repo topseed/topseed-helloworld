@@ -25,6 +25,7 @@ We also welcome code contributions from seasoned designers and developers
 - SPA and AMP
 - Server side data-binding and in-browser data binding
 - Loosely coupled to architectures
+- Web Components
 - Mostly static (easy to maintain/develop and scale)
 
 
