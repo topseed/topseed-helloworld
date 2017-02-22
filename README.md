@@ -32,12 +32,13 @@ We also welcome code contributions from seasoned designers and developers
 ## Getting started with a 'hello world':
 
 To run:
-- install node.js with NPM from https://nodejs.org, unless you already have it
+- install node.js with NPM from <http://nodejs.org>.
+- A recent version is v7.6. You can check with $ node -v
 - Download and unzip this project
 - Open a command prompt in the project root and execute the following commands:  
-$cd webApp  
-$npm install (Note: this may take a moment to respond)  
-$node index    
+$ cd webApp  
+$ npm install (Note: this may take a moment to respond)  
+$ node index    
 
 Now open your favorite browser on localhost:8081 (or any other port proposed by the console). To see SPA, click menu one and then two, notice that it does not reaload the header.
 If you add ?w=1 to the URL you get www page, else it is mobile/AMP (in 'two'). In production, we use subdomains www. or m.
