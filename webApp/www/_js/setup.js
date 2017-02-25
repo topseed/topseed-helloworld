@@ -65,7 +65,7 @@ loadNotChrome()
 
 loadjs([
 	//,'/_js/libJs/bowser.min.js'
-	'//code.jquery.com/jquery-2.2.4.min.js'
+	'//cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js'
 	,'https://www.masons-foundation.org/_js/libJs/jquery.smoothState.js'
 	,'https://www.masons-foundation.org/_js/libJs/riotComp.min.js'
 
