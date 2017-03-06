@@ -71,6 +71,8 @@ exports.decide = function (req, res, next) {
 			const isWWWW = isW(req)
 			console.log(pgPath + ' ^ ' + isWWWW)
 
+			console.log(fs.existsSync(pgPath + INDEX))
+
 			if (fs.existsSync(pgPath + INDEX)) {// this is not compliant to SPA|AMP
 				fs.readFile(pgPath + INDEX, 'utf8', function(err, data) {
 					ifError(err, 'index', res)
