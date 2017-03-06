@@ -25,7 +25,7 @@ function startApp(){
 	console.log('v17.02a')
 	//>====================================================================
 	//SS
-	let ssoptions={
+	var ssoptions={
 		debug: true,
 		prefetch: true,
 		cacheLength: 3,
@@ -56,7 +56,7 @@ function startApp(){
 		}//ready()
 	}//sso
 	
-	const smoothState= $('#ss1').smoothState(ssoptions)
+	var smoothState= $('#ss1').smoothState(ssoptions)
 
 }//startApp()
 
