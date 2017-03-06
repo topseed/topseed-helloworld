@@ -41,12 +41,12 @@ $ npm install (Note: this may take a moment to respond)
 $ node index    
 
 Now open your favorite browser on localhost:8081 (or any other port proposed by the console). To see SPA, click menu one and then two, notice that it does not reaload the header.
-If you add ?w=1 to the URL you get www page, else it is mobile/AMP (in 'two'). In production, we use subdomains www. or m.
+If you add ?w=1 to the URL you get www page, else it is mobile/AMP (in 'two'). In production, we use subdomains www  or m.
 to differentiate versions.
 
-To edit, you can use any IDE, we like VS Code. Also we recommend that you checkout Sass, Markdown and Pug (<http://youtu.be/wzAWI9h3q18>). Try Prepros.io for this project to pre-process. When you edit /webApp/www/post/one/story1.md and save, it converts the markdown file into html. Refresh the browser and see the change you made. That is for webApp/www/post/one/ and for webApp/www/post/two/ It works as mobile (no client side .js) and SPA.
+To edit, you can use any IDE, we like VS Code. Also we recommend that you checkout Sass, Markdown and Pug (<http://youtu.be/wzAWI9h3q18>). Try Prepros.io for this project to pre-process. When you edit /post/one/story1.md and save, it converts the markdown file into html. Refresh the browser and see the change you made. That is for /post/one/ and for /post/two/ It works as mobile (no client side .js) and SPA.
 
-Explore https://zeit.co, our preferred way to deploy to the web.
+Explore https://zeit.co, our preferred way to deploy to the web, ex: $ now -a topseed.now.sh, where topseed is a name you pick.
 
 For more examples: http://github.com/topseed/topseed-demos
 
