@@ -49,6 +49,7 @@ To edit, you can use any IDE, we like VS Code. Also we recommend that you checko
 Explore https://zeit.co, our preferred way to deploy to the web, ex: $ now -a topseed.now.sh, where topseed is a name you pick.
 
 For more examples: http://github.com/topseed/topseed-demos
+and http://github.com/topseed/topseed-bp
 
 For forum, support or Q/A: http://gitter.im/topseed-demos/Lobby
 
