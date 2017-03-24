@@ -1,0 +1,11 @@
+CACHE MANIFEST
+
+#index assets
+https://cdn.ampproject.org/v0.js
+https://cdn.jsdelivr.net/js-signals/1.0.0/signals.min.js
+https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic&lang=en
+
+#page assets:
+
+NETWORK:
+*

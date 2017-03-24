@@ -1,0 +1,28 @@
+
+nav#appbar.mui-container-fluid.mui--no-user-select
+	table(width='100%')
+		tr
+			td
+				a.navigation(href='#sidedrawer') ☰ &nbsp;
+					span.mui--hidden-xs Topseed 
+						span.fallback-font &trade;
+			td.mui--text-right
+				ul#menu.mui-list--inline
+					li
+						a(href='/home/') Home
+					li
+						a(href='/two/') Two
+					li &nbsp;
+
+#sidedrawer.mui--z1
+	nav#sidenav.mui--no-user-select
+		a#sidedrawer-brand(href='#') ☰  &nbsp;
+			span Topseed
+				span.fallback-font &trade;
+		.mui-divider
+		ul.mui-list--unstyled#sidenavstrong
+			li
+				a(href='/home/') Home
+			li
+				a(href='/two/') Two
+
