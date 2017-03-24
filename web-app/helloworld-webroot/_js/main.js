@@ -1,11 +1,9 @@
 'use strict'
 
-loadjs.ready(['dependencyNotChrome', 'keyLibs'], {// loaded setup libs
+loadjs.ready(['dependencyIE', 'keyLibs'], {// loaded setup libs
 	success: function(){
 	loadjs([
-		//dbind:
-		//'https://www.masons-foundation.org/_js/libJs/jquery.jsForm.min.js'
-		'//cdn.jsdelivr.net/jquery.transit/0.9.12/jquery.transit.min.js'
+		'https://cdn.rawgit.com/topseed/topseed-npm/master/browserSide/deps/jquery.smoothState.js',
 
 		], { success: function(){
 			console.log('loaded libs')
@@ -21,7 +19,7 @@ function startApp(){
 	A.loaded=true
 	A.act(A.LOADED)
 
-	console.log('v17.02a')
+	console.log('v17.03')
 	//>====================================================================
 	//SS
 	let ssoptions={

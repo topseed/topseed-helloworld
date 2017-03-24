@@ -1,6 +1,8 @@
 const fs = require('fs')
 const useragent = require('useragent')
 const isj = require('is_js')
+const Util = require('topseed-util')
+const U = new Util() 
 
 useragent(true)
 
@@ -8,16 +10,6 @@ useragent(true)
 const ROOT = './' + ServerConfig.WEBROOT
 const SPA = 'index.html'
 const AMP = 'indexA.html'
-
-function setNone(res) {
-	res.header('Cache-Control', 'private, no-cache, no-store')
-}
-function setQuick(res) {//2 hrs, 2 minutes
-	res.header('Cache-Control', 'public, s-maxage=7200, max-age=120, must-revalidate')
-}
-function setLong(res) {//20 hours,10 minutes
-	res.header('Cache-Control', 'public, s-maxage=72000, max-age=600, must-revalidate')
-}
 
 const _slash = '/'
 function endsWithSlash(str ) {
@@ -56,8 +48,8 @@ function serveAmp(req) { // should we serve mobile/AMP
 //**************** */
 console.log('AF v17.021a')
 exports.decide = function (req, res, next) {
-	res.header('X-TimeSent', Date.now() )
-	setLong(res) // default is long, later we set to quick if needed
+	res.header('X-TimeSent', U.getDt() )
+	U.cacheLong(res) // default is long, later we set to quick if needed
 	//console.log('Decider ->')
 	
 	if (req.path.indexOf('.') >0 ) { // hasDot?
@@ -76,7 +68,7 @@ exports.decide = function (req, res, next) {
 			if (isAmp && fs.existsSync(pgPath + AMP)) { //AMP
 				
 				console.log('found '+pgPath + AMP)
-				setQuick(res)
+				U.cacheQuick(res)
 				fs.readFile(pgPath + AMP, 'utf8', function(err, data) {
 					ifError(err, 'amp', res)
 					res.send(data)
