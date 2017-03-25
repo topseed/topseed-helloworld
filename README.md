@@ -27,7 +27,7 @@ We also welcome code contributions from seasoned designers and developers.
 
 ## Getting started with a 'hello world':
 
-Download and unzip this project
+Download and unzip this project.
 
 Alternative 1: Run (static):
 - Open your Google Chrome web browser and install the "Web Server for Chrome" app from <https://chrome.google.com/webstore/search/Web%20Server?_category=apps >
