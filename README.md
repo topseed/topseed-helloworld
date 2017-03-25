@@ -12,7 +12,7 @@ We also welcome code contributions from seasoned designers and developers.
 
 ## Some best practices demonstrated:
 - DOM centric to be more friendly with team that includes interactive designers that code
-- Using Page Transitions for a Single Page Application (SPA) feel that works with SEO
+- Use page transitions for a Single Page Application (SPA) feel that works with SEO
 - Can be static (serverless), deployed to CDN edge cache to scale (fetch() microservices)
 - Accelerated Mobile Pages (AMP) that can boost SEO, in same or separate subdomain
 - Native Mobile Apps (Phonegap/Cordova) 
