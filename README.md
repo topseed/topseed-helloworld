@@ -30,7 +30,7 @@ Alternative 1: Run (static):
 - Launch the app, click the Choose Folder button and select the /helloworld-webroot folder under /topseed/web-app/helloworld-webroot. Also ensure Options has "Automatically show index.html" checked. 
 - Ensure the Web Server is STARTED, then navigate to the proposed URL (eg. <http://127.0.0.1:8887>). 
 
-Alternative 2: Run in Node.js:
+Alternative 2: Run in node.js:
 - install node.js with NPM from <http://nodejs.org>. A recent version is v7.6. You can check with $ node -v
 - Open a command prompt in the project root (topseed) and execute the following commands:  
 $ cd web-app  
