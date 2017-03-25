@@ -1,8 +1,7 @@
 # topseed
 
 Topseed aims to be a showcase of best practices and approaches for designers and front end developers
-who want to build stunning mobile-first web apps with some of the best technologies
-available now. 
+who want to build stunning mobile-first web apps with some of the best technologies available now.
 
 What technologies make our cut? Those that let us be the most
 productive and creative. And that we know to be maintainable. And that we expect 
@@ -23,9 +22,8 @@ We also welcome code contributions from seasoned designers and developers.
 - Native Mobile Apps (Phonegap/Cordova) 
 - Server side data-binding and in-browser data binding
 - Use component libraries (such as Riot.js, Polymer, HTML 5.1 Standard Web Components)
-- Use Material Design, SASS, Pug and BEM Standard
-- Reduce bit rot and maintenance costs.
-
+- Use Material Design, SASS, and BEM Standard
+- Use Pug to improve reuse and reduce maintenance costs.
 
 ## Getting started with a 'hello world':
 
