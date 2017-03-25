@@ -27,7 +27,7 @@ We also welcome code contributions from seasoned designers and developers.
 
 ## Getting started with a 'hello world':
 
-- Download and unzip this project
+Download and unzip this project
 
 Alternative 1: Run (static):
 - Open your Google Chrome web browser and install the "Web Server for Chrome" app from <https://chrome.google.com/webstore/search/Web%20Server?_category=apps >
@@ -44,12 +44,12 @@ $ node index
 
 Explore:
 
-Click menu "Two" and notice that the header (menu bar) is not reloaded - we have an "Application" look and feel, like a single-page application (SPA).
+Click menu "Two" and notice that the header (menu bar) is not reloaded - we have an "Application" look and feel, like a single-page application (SPA). Also click the "burger" menu to see the sidebar menu slide out.
 Page "Two" has an AMP version. In production, we would use subdomains www. or m. to differentiate versions.
 
-To edit, you can use any IDE, we like VS Code. Also we recommend that you use SASS for CSS with Pug (<http://youtu.be/wzAWI9h3q18>). 
+You can use any IDE for edits. We like  [VS Code](<https://code.visualstudio.com/download>). We recommend using and SASS for CSS and Pug. See [great Pug intro video here](<http://youtu.be/wzAWI9h3q18>) 
 
-Download, install and run Prepros (Unlimited Trial) from https://prepros.io/downloads. Use the bottom left "+" button to add the /helloworld-webroot folder under /topseed/web-app/helloworld-webroot as a new project. In Project/Settings/Compiler Settings/Markdown, uncheck "Wrap with Html". Restart Prepros.
+Download, install and run Prepros (Unlimited Trial) from <https://prepros.io/downloads>. Use the bottom left "+" button to add the /helloworld-webroot folder under /topseed/web-app/helloworld-webroot as a new project. In Project/Settings/Compiler Settings/Markdown, uncheck "Wrap with Html". 
 
 When you edit /web-app/helloworld-webroot/home/story1.md and save, Prepros will convert the markdown file into html. Refresh the browser and see the change you made.
 
