@@ -27,23 +27,31 @@ We also welcome code contributions from seasoned designers and developers.
 
 ## Getting started with a 'hello world':
 
-To run:
-- install node.js with NPM from <http://nodejs.org>.
-- A recent version is v7.6. You can check with $ node -v
 - Download and unzip this project
-- Open a command prompt in the project root and execute the following commands:  
+
+Alternative 1: Run (static):
+- Open your Google Chrome web browser and install the "Web Server for Chrome" app from <https://chrome.google.com/webstore/search/Web%20Server?_category=apps >
+- Launch the app, click the Choose Folder button and select the /helloworld-webroot folder under /topseed/web-app/helloworld-webroot. Also ensure Options has "Automatically show index.html" checked. 
+- Ensure the Web Server is STARTED, then navigate to the proposed URL (eg. <http://127.0.0.1:8887>). 
+
+Alternative 2: Run in Node.js:
+- install node.js with NPM from <http://nodejs.org>. A recent version is v7.6. You can check with $ node -v
+- Open a command prompt in the project root (topseed) and execute the following commands:  
 $ cd web-app  
 $ npm install (Note: this may take a moment to respond)  
 $ node index    
+- Navigate to <http://localhost:8081> (or any other port proposed by the console). 
 
-Now open your favorite browser on localhost:8081 (or any other port proposed by the console). Click menu "Two" and notice that the header (menu bar) is not reloaded - we have an "Application" look and feel, like a single-page application (SPA).
+Explore:
+
+Click menu "Two" and notice that the header (menu bar) is not reloaded - we have an "Application" look and feel, like a single-page application (SPA).
 Page "Two" has an AMP version. In production, we would use subdomains www. or m. to differentiate versions.
 
 To edit, you can use any IDE, we like VS Code. Also we recommend that you use Sass for CSS with Pug (<http://youtu.be/wzAWI9h3q18>). Try Prepros.io on the project. When you edit /web-app/helloworld-webroot/home/story1.md and save, it converts the markdown file into html. Refresh the browser and see the change you made. That is for /web-app/helloworld-webroot/home/ and for /two/ It works as mobile (no client side .js) and SPA.
 
-Explore https://zeit.co, our preferred way to deploy to the web. You deploy the web-app folder after deleting the node_modules folder.
+Explore <https://zeit.co>, our preferred way to deploy to the web. You deploy the web-app folder after deleting the node_modules folder.
 
-For more: http://github.com/Topseed/Topseed-demos
+For more: <http://github.com/topseed/topseed-demos>
 
-For forum: http://gitter.im/Topseed-demos/Lobby
+For forum: <http://gitter.im/topseed-demos/Lobby>
 
