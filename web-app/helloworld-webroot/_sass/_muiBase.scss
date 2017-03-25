@@ -96,10 +96,10 @@ body {
 	//min-height: calc(100% - $headerH);
 	overflow-x: hidden;
 	//z-index: -1;
+	transition: margin-left .2s ease;
 }
 
 .navigation {
-	//transition: width 5s ease;
 	text-decoration: none;
 	color: $primary-color-text;
 	cursor: pointer;
@@ -155,32 +155,34 @@ body {
 }
 //end from muicss site =================================================================
 
-#sidedrawer:target {
+#sidedrawer:target { //makes it appear
 	width: 200px;
+}
+
+#page-wrap {
+	transition: margin-left .2s ease;
+}
+
+@media (min-width: 600px) { //no overlap of sidedrawer on larger screens, optional
+	#sidedrawer:target + #content-wrapper {
+		margin-left: 200px;
+	}
 }
 
 $footerH:  $base-line-height * 2.5;
 footer, #footer {
 	position:fixed;
-	left: 0;
 	bottom: 0;
 	height: $footerH;
 	width: 100%;
-	right: 0;
 	margin-bottom: 0;
 }
 body {
-	margin-bottom: $base-line-height * 10;
+	margin-bottom: $base-line-height * 3;
 }
 
 #navPrev, #navPrev a {
 	color: white;
 	text-decoration: none;
 }
-@media (min-width: 600px) { // cols
-article {
-  -webkit-columns: 2;
-	 -moz-columns: 2;
-		  columns: 2;
-}
-}//mq
+
