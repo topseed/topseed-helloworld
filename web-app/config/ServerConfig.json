@@ -1,5 +1,8 @@
 {
 	"WEBROOT": "helloworld-webroot",
 	"PORT": 8081,
-	"AMP_IS_DEFAULT": false
+	"WEB_SUBDOMAIN": "www",
+	"AMP_SUBDOMAIN": "www",
+	"AMP_SUBDOMAIN_comment": "change AMP_SUBDOMAIN to m if in DNS", 
+	"AMP_IS_DEFAULT": true
 }

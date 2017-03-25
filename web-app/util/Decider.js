@@ -38,8 +38,9 @@ function getPath(req) {
 }
 function serveAmp(req) { // should we serve mobile/AMP
 	//if (req.path.startsWith('/home/')) return !ServerConfig.AMP_IS_DEFAULT
-	//if (req.subdomains.indexOf('www') > -1)  return ServerConfig.AMP_IS_DEFAULT
 	//if (req.socket.localPort == 8082) return ServerConfig.AMP_IS_DEFAULT
+	if (req.subdomains.indexOf(ServerConfig.WEB_SUBDOMAIN) > -1)  return ServerConfig.AMP_IS_DEFAULT
+	if (req.subdomains.indexOf(ServerConfig.AMP_SUBDOMAIN) > -1)  return true
 	if (req.query.w == '1') return false
 	if (req.query.a == '1') return true
 	return ServerConfig.AMP_IS_DEFAULT

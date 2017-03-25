@@ -1,9 +1,18 @@
 'use strict'
 
-global.ServerConfig = Object.freeze(require('./config/ServerConfig.json'))
-
 const express = require('express')
 const server = express()
+const fs = require('fs')
+
+global.ServerConfig = Object.freeze({ /* defaults */
+		"WEBROOT": "helloworld-webroot",
+		"PORT": 8081,
+		"WEB_SUBDOMAIN": "www",
+		"AMP_SUBDOMAIN": "www", /* change to "m" in ServerConfig.json if in DNS */
+		"AMP_IS_DEFAULT": false
+	})
+if (fs.existsSync('./config/ServerConfig.json'))
+	global.ServerConfig = Object.freeze(require('./config/ServerConfig.json'))
 
 const Decider = require('./util/Decider')
 
