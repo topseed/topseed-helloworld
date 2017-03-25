@@ -1,5 +1,5 @@
 {
-    "WEBROOT": "helloworld-webroot",
-    "PORT": 8081,
-    "AMP_IS_DEFAULT": false
+	"WEBROOT": "helloworld-webroot",
+	"PORT": 8081,
+	"AMP_IS_DEFAULT": false
 }
