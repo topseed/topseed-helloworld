@@ -35,7 +35,7 @@ $mui-base-font-smoothing: true;
 // def ==========================================================================
 html,
 body {
-	height: 100%;
+	height: auto !important; 
 }
 * {
 	font-family: 'Roboto', serif;
@@ -93,9 +93,7 @@ body {
 
 #content-wrapper {
 	margin-top: $headerH;
-	//min-height: calc(100% - $headerH);
 	overflow-x: hidden;
-	//z-index: -1;
 	transition: margin-left .2s ease;
 }
 
@@ -159,10 +157,6 @@ body {
 	width: 200px;
 }
 
-#page-wrap {
-	transition: margin-left .2s ease;
-}
-
 @media (min-width: 600px) { //no overlap of sidedrawer on larger screens, optional
 	#sidedrawer:target + #content-wrapper {
 		margin-left: 200px;
@@ -178,7 +172,7 @@ footer, #footer {
 	margin-bottom: 0;
 }
 body {
-	margin-bottom: $base-line-height * 3;
+	margin-bottom: 0 !important; //$base-line-height * 3;
 }
 
 #navPrev, #navPrev a {
