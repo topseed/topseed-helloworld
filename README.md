@@ -40,7 +40,7 @@ $ node index
 
 Explore:
 
-Click menu "Two" and notice that the header (menu bar) is not reloaded - we have an "Application" look and feel, like a single-page application (SPA). Also click the "burger" menu to see the sidebar menu slide out. On a small screen it will overlap. Page "Two" has an AMP version. In production, we would use subdomains www. or m. to differentiate versions.
+Click menu "Two" and notice that the header (menu bar) is not reloaded - we have an "Application" look and feel, like a single-page application (SPA). Also click the ☰ menu to see the sidebar menu slide out. On a small screen it will overlap. Page "Two" has an AMP version. In production, we would use subdomains www. or m. to differentiate versions.
 
 You can use any IDE for edits. We like  [VS Code](<https://code.visualstudio.com/download>). We recommend using and SASS for CSS and Pug/Jade. Watch a great Pug intro video [here](<http://youtu.be/wzAWI9h3q18>).
 
