@@ -7,10 +7,6 @@ What technologies make our cut? Those that let us be the most
 productive and creative. And that we know to be maintainable. And that we expect 
 to be future-safe.
 
-Architecture is like a kindergarden: we put the shoes here, the jackets over there,
-and now we know where to find things. We propose approaches that make it easy
-to design and develop cutting edge web apps.
-
 We welcome scrutiny and feedback from anyone who tries to follow our approaches. 
 We also welcome code contributions from seasoned designers and developers.
 
