@@ -47,7 +47,11 @@ Explore:
 Click menu "Two" and notice that the header (menu bar) is not reloaded - we have an "Application" look and feel, like a single-page application (SPA).
 Page "Two" has an AMP version. In production, we would use subdomains www. or m. to differentiate versions.
 
-To edit, you can use any IDE, we like VS Code. Also we recommend that you use Sass for CSS with Pug (<http://youtu.be/wzAWI9h3q18>). Try Prepros.io on the project. When you edit /web-app/helloworld-webroot/home/story1.md and save, it converts the markdown file into html. Refresh the browser and see the change you made. That is for /web-app/helloworld-webroot/home/ and for /two/ It works as mobile (no client side .js) and SPA.
+To edit, you can use any IDE, we like VS Code. Also we recommend that you use SASS for CSS with Pug (<http://youtu.be/wzAWI9h3q18>). 
+
+Download, install and run Prepros (Unlimited Trial) from https://prepros.io/downloads. Use the bottom left "+" button to add the /helloworld-webroot folder under /topseed/web-app/helloworld-webroot as a new project. In Project/Settings/Compiler Settings/Markdown, uncheck "Wrap with Html". Restart Prepros.
+
+When you edit /web-app/helloworld-webroot/home/story1.md and save, Prepros will convert the markdown file into html. Refresh the browser and see the change you made.
 
 Explore <https://zeit.co>, our preferred way to deploy to the web. You deploy the web-app folder after deleting the node_modules folder.
 
