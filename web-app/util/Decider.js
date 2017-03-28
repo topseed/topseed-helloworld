@@ -1,7 +1,7 @@
 const fs = require('fs')
 const useragent = require('useragent')
 const isj = require('is_js')
-const Util = require('topseed-util')
+const Util = require('./Util')
 const U = new Util() 
 
 useragent(true)
