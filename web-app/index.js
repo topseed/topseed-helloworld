@@ -7,7 +7,7 @@ const fs = require('fs')
 const C = (require('./config/ServerConfig'))
 global.ServerConfig = new C()
 
-const Decider = require('./util/Decider')
+const Decider = require('./utils/Decider')
 
 // ###################### static
 server.use(Decider.decide) //amp
