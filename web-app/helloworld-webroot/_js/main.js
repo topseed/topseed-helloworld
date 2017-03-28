@@ -43,7 +43,7 @@ function startApp(){
 			duration: 0,
 			render: function ($container, $newContent) {
 				$container.html($newContent)
-				$('content-wrapper').fadeTo(1000/30,1)
+				$('#content-wrapper').fadeTo(1000/30,1)
 
 				A.act(A.PAGE)// main action
 				A.inAction= false
