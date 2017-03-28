@@ -5,7 +5,7 @@ const server = express()
 const fs = require('fs')
 
 const C = (require('./config/ServerConfig'))
-global.ServerConfig = new C();
+global.ServerConfig = new C()
 
 const Decider = require('./util/Decider')
 
