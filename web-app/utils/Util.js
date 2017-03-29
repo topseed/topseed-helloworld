@@ -63,7 +63,7 @@ getPath(ROOT, req) {
 	path = this.endsWithSlash(path)
 	return path
 }
-
+/*
 isW(req) { // should we serve SPA or mobile/AMP?
 	if(req.path.startsWith('/w/')) return true
 	if(req.subdomains.indexOf('www') > -1)  return true
@@ -71,7 +71,7 @@ isW(req) { // should we serve SPA or mobile/AMP?
 	if(req.query.w == '1') return true
 	return false
 }
-
+*/
 
 replace(target, search, replacement) {
 	return target.split(search).join(replacement)

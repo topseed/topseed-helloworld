@@ -41,12 +41,11 @@ exports.decide = function (req, res, next) {
 
 			const pgPath = U.getPath(ROOT,req)
 			const isAmp = serveAmp(req)
-			console.log(pgPath + ' ^ serve amp:' + isAmp)
-			console.log('exists:'+pgPath + AMP)
+
+			console.log('found '+pgPath)
 
 			if (isAmp && fs.existsSync(pgPath + AMP)) { //AMP
 				
-				console.log('found '+pgPath + AMP)
 				U.cacheQuick(res)
 				fs.readFile(pgPath + AMP, 'utf8', function(err, data) {
 					U.ifError(err, 'amp', res)
