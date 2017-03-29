@@ -20,8 +20,7 @@ $box-shad__hov: 0 3px 4px rgba(0,0,0,0.7);
 
 @import 'sass/mui';
 
-html,
-body {
+html, body {
 	height: auto;
 }
 
@@ -36,8 +35,8 @@ body {
 	background-color: $primary-color-text;
 }
 
-.fallback-font { 
-   font-family: Arial //for @trade; TM that is not in Roboto
+.fallback-font {
+	font-family: Arial //for @trade; TM that is not in Roboto
 }
 
 // nav ==========================================================================
