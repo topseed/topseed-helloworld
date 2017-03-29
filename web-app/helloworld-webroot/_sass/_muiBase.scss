@@ -22,7 +22,7 @@ $box-shad__hov: 0 3px 4px rgba(0,0,0,0.7);
 
 html,
 body {
-	height: 100%;
+	height: auto;
 }
 
 * {
@@ -132,24 +132,24 @@ body {
 	overflow: auto;
 	z-index: 100;
 	left: 0;
-	transition: width .1s ease;
+	transition: width .1s ease; //transition to appear
 	box-shadow: $box-shad__hov;
 
 }
 
-#sidedrawer:target { //makes it appear
+#sidedrawer:target { //appear
 	width: 200px;
-}
-
-@media (min-width: 600px) { //no overlap of sidedrawer on larger screens, optional
-	#sidedrawer:target + #content-wrapper {
-		margin-left: 200px;
-	}
 }
 
 #content-wrapper {
 	margin-top: $headerH;
-	transition: margin-left .1s ease;
+	transition: margin-left .1s ease; //transition to slide right
+}
+
+@media (min-width: 600px) { //slide right, no overlap of sidedrawer on larger screens, optional
+	#sidedrawer:target + #content-wrapper {
+		margin-left: 200px;
+	}
 }
 
 // foot ==========================================================================
