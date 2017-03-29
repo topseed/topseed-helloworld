@@ -19,7 +19,6 @@
 		, "useragent": ">=2.1"
 		, "now-logs": ">=0.0.7"
 		, "bugsnag": ">=1.9"
-		, "topseed-util": "=1.0.3"
 		, "riot": ">=3.2"
 		, "cheerio": ">=0.22"
 		, "node-fetch": ">=1.6"

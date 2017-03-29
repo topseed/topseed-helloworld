@@ -36,6 +36,10 @@ body {
 	background-color: $primary-color-text;
 }
 
+.fallback-font { 
+   font-family: Arial //for @trade; TM that is not in Roboto
+}
+
 // nav ==========================================================================
 #appbar,
 #sidedrawer {
@@ -137,8 +141,15 @@ body {
 	width: 200px;
 }
 
+@media (min-width: 600px) { //no overlap of sidedrawer on larger screens, optional
+	#sidedrawer:target + #content-wrapper {
+		margin-left: 200px;
+	}
+}
+
 #content-wrapper {
 	margin-top: $headerH;
+	transition: margin-left .1s ease;
 }
 
 // foot ==========================================================================
