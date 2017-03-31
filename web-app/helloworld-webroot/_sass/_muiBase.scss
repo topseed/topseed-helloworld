@@ -142,7 +142,6 @@ body {
 
 #content-wrapper {
 	margin-top: $headerH;
-	transition: margin-left .1s ease; //transition to slide right
 }
 
 @media (min-width: 600px) { //slide right, no overlap of sidedrawer on larger screens, optional
