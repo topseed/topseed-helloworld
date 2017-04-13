@@ -31,7 +31,7 @@ html {
 body {
 	min-height: 100vh;
 	color: $primary-text-color;
-	background-color: $primary-color-light;
+	background-color: white;
 	overflow-y: auto;
 	overflow-x: hidden;
 	animation:none;
@@ -134,23 +134,19 @@ body {
 	flex-grow: 1;
 	width: 100vw;
 	font-family: 'Noto Serif', serif;
-	background-color: $primary-color-light;
+	background-color: white;
 }
 
 #content-wrapper * {
 	font-family: 'Noto Serif', serif;
 }
 
-a {
-	color: $primary-color-text;
-	text-decoration: underline;
-	cursor: pointer;
-}	
 
-// Footer, sticky but not fixed (scrolls out of view when body is tall) ===============	
+// Footer, sticky but not fixed (scrolls out of view when body is tall) ===============================================
 #footer {
 	max-width: 100vw;
 	min-width: 100vw;
+	min-height: 1.5 * $base-line-height;
 	color: $primary-text-color;
 	background-color: $primary-color;
 	overflow: hidden;
@@ -172,3 +168,11 @@ a {
 #footer_div--right {
 	margin-right: $mui-base-font-size *1.5;
 }
+
+// other /////////////////////////////////////////////
+
+a {
+	color: $primary-color-text;
+	text-decoration: underline;
+	cursor: pointer;
+}	
