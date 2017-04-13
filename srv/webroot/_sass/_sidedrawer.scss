@@ -1,7 +1,7 @@
 #sidedrawer  {
 	min-height: 100vh;
 	z-index: 50;
-	transition: transform .2s ease;
+	transition: transform .15s ease;
 }
 
 #sidedrawer:target { // makes it appear when anchor link is clicked
@@ -22,7 +22,7 @@
 	overflow: hidden;
 	line-height: $headerH;
  	padding-left: 30px;
-	transition: background-color .2s ease; // optional
+	transition: background-color .15s ease; // optional
 }
 
 #sidedrawer--menu li:hover {

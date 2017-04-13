@@ -160,6 +160,7 @@ a {
 	display: flex;
 	flex-direction: row;
 	align-content: space-between;
+	padding-top: $base-line-height *.25;
 	padding-left: $base-line-height *.5;
 	padding-right: $base-line-height *.85;
 }

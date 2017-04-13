@@ -2,11 +2,11 @@
 loadjs.ready(['dependencyIE', 'keyLibs'], {// loaded setup libs
 	success: function(){
 	loadjs([
-		'https://cdn.rawgit.com/topseed/topseed-npm/master/v1.08/deps/jquery.smoothState.js',
+		'https://cdn.rawgit.com/topseed/topseed-npm/master/v1.08/deps/jquery.smoothState.js'
 
 		//images
-		'/_js/libJs/jquery.fullpage.min.css',
-		'/_js/libJs/jquery.fullpage.min.js',
+		,'/_js/libJs/jquery.fullpage.min.css'
+		,'/_js/libJs/jquery.fullpage.min.js'
 
 		//data
 		,'/_js/libJs/jquery.jsForm.min.js'

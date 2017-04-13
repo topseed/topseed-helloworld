@@ -1,0 +1,17 @@
+IDE w/ auto save
+spa
+jquery data binding
+pug
+sass / Mui
+deploy zeit/cdn
+webmaster SEO dash/ get as bot
+
+markdown
+amp
+ssr
+web comp data binding
+phone gap
+deploy DO
+full page
+
+digital creator
