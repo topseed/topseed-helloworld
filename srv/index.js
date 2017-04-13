@@ -51,7 +51,7 @@ class Page1CDS extends CDS {
 }//class
 
 const _cds = new Page1CDS()
-if(false) {
+if(true) {
 	const pro = _cds.doFetch()
 	pro.then(function(val) {
 		console.log(val)

@@ -21,7 +21,6 @@ if (req.socket.localPort == 8082) return true
 //**************** */
 console.log('AF v17.021a')
 exports.decide = function (req, res, next) {
-	console.log('.')
 	res.header('X-TimeSent', U.getDt() )
 	U.cacheLong(res) // default is long, later we set to quick if needed
 	//console.log('Decider ->')
