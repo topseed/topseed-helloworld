@@ -7,8 +7,9 @@ loadjs.ready(['dependencyIE', 'keyLibs'], {// loaded setup libs
 		//images
 		'/_js/libJs/jquery.fullpage.min.css',
 		'/_js/libJs/jquery.fullpage.min.js',
-		'/_js/libJs/slick.css',
-		'/_js/libJs/slick.min.js'
+
+		//data
+		,'/_js/libJs/jquery.jsForm.min.js'
 
 		], { success: function(){
 			console.log('loaded libs')
@@ -23,12 +24,11 @@ function startApp(){
 	A.loaded=true
 	A.act(A.LOADED)
 
-	console.log('v17.03')
 	//SS
 	let ssoptions={
 		debug: true,
 		prefetch: true,
-		cacheLength: 3,
+		cacheLength: 2,
 		repeatDelay: 450,
 
 		onStart: {
@@ -57,6 +57,6 @@ function startApp(){
 	}//sso
 	
 	const smoothState= $('#ss1').smoothState(ssoptions)
-	//let endTime = (new Date()).getTime() - _loadStarted
+	//var endTime = new Date().getTime() - _loadStarted
 	//console.log('load time ' + endTime)
 }//startApp()
