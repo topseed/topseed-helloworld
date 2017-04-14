@@ -846,8 +846,6 @@ body { min-height: 100vh; color: #000; background-color: white; overflow-y: auto
 
 #footer_div--right { margin-right: 23.4px; }
 
-a { color: #FFF; text-decoration: underline; cursor: pointer; }
-
 html { position: relative; }
 
 body { min-height: 1vh; margin-bottom: 36px; }
