@@ -1,6 +1,6 @@
 # topseed
 
-Topseed aims to be a showcase of best practices and approaches for designers and front end developers
+Topseed aims to be a showcase of best practices and approaches for designers, digital creatives and front end developers
 who want to build stunning mobile-first web apps with some of the best technologies available now.
 
 What technologies make our cut? Those that let us be the most
@@ -48,7 +48,16 @@ Download, install and run Prepros (Unlimited Trial) from <https://prepros.io/dow
 
 When you edit /web-app/helloworld-webroot/home/story1.md and save, Prepros will convert the markdown file into html. Refresh the browser and see the change you made.
 
-Explore <https://zeit.co>, our preferred way to deploy to the web. You deploy the web-app folder after deleting the node_modules folder.
+Check <https://github.com/puppetmaster3/smoothState.js>, a fork of SmoothState.js, one of our favorite libs.
+Explore <https://zeit.co>, one way to deploy to the web. You deploy the web-app folder after deleting the node_modules folder.
+
+Some other buzwords that resonated with us:
+- Serverless
+- SEO/view as bot
+- Sustinable / maintainable
+- Rapid prototyping
+- Agile
+- Digital Craftmanship
 
 For more: <http://github.com/topseed/topseed-demos>
 
