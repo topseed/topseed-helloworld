@@ -2,9 +2,6 @@
 console.log('CDS')
 class CDS {
 
-static get XBASIC() { return  'X-BASIC'}
-static get XJT() { return  'X-JWT'}
-
 static fetch(fetch_,ROOT_, url_, data_) {
 	console.log('fetching ', url_)
 	return fetch_(ROOT_ + url_ , { //1 call
@@ -26,7 +23,7 @@ static fetch(fetch_,ROOT_, url_, data_) {
 }//_()
 
 } // class
-// browser and phonegap:
+// browser and native:
 if (typeof module !== 'undefined' && typeof module.exports !== 'undefined')
 	module.exports = CDS //node
 
