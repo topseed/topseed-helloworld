@@ -10,14 +10,15 @@ to be future-safe.
 We welcome scrutiny and feedback from anyone who tries to follow our approaches. 
 We also welcome code contributions from seasoned designers and developers.
 
-## Some best practices demonstrated:
+## Some best practices:
+- Static site based (ex: WinterSmith.io) and serverless.
 - DOM centric to be more friendly with team that includes interactive designers that code
 - Use page transitions for a Single Page Application (SPA) feel that works with SEO
 - Can be static (serverless), deployed to CDN edge cache to scale (fetch() microservices)
-- Accelerated Mobile Pages (AMP) that can boost SEO, in same or separate subdomain
+- Accelerated Mobile Pages (AMP)
 - Native Mobile Apps (Phonegap/Cordova) 
 - Server side data-binding and in-browser data binding
-- Use component libraries (such as Riot.js, Polymer, HTML 5.1 Standard Web Components)
+- Use component libraries
 - Use Material Design, SASS, and BEM Standard
 - Use Pug to improve reuse and reduce maintenance costs.
 
