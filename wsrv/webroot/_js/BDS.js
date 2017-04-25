@@ -1,6 +1,7 @@
 'use strict'
-console.log('CDS')
-class CDS {
+console.log('BDS')
+
+class BDS {
 
 static fetch(fetch_,ROOT_, url_, data_) {
 	console.log('fetching ', url_)
@@ -25,6 +26,6 @@ static fetch(fetch_,ROOT_, url_, data_) {
 } // class
 // browser and native:
 if (typeof module !== 'undefined' && typeof module.exports !== 'undefined')
-	module.exports = CDS //node
+	module.exports = BDS //node
 
 
