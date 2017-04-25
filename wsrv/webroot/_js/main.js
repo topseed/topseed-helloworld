@@ -5,7 +5,7 @@ loadjs.ready(['dependencyIE', 'keyLibs'], {// loaded setup libs
 		loadjs.done('ready') // page ready
 
 		loadjs([
-			//images
+
 			'/_js/libJs/jquery.fullpage.min.css'
 			,'/_js/libJs/jquery.fullpage.min.js'
 
