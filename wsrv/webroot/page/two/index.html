@@ -40,17 +40,13 @@
       </div>
       <script>
         function UIinit() {
-        	
-        }
-        loadjs.ready(['app-ready'], {// loaded setup libs
-        	success: function(){
-        		UIinit()
-        		loadjs([ 'PS.js' ] // now load pg js if needed
-        			,{ success: function(){
-        				PS.init()
-        			}//suc
-        		})//load pg
-        	}// lsuc
+        	loadjs([ '/page/two/PS.js' ], // now load pg js if needed
+        		{ success: function(){ PS.init() } 
+        	})//load ps.js
+        }//UIInit()
+        
+        loadjs.ready(['app-ready'], // loaded setup libs
+        	{ success: function(){ UIinit() }// lsuc
         })//ready()
         
       </script>
