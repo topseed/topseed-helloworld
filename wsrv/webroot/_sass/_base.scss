@@ -3,19 +3,16 @@
 
 // Default M.ui variables (See muicss.com) ============================================
 $base-line-height: 24px !default; // This is your web-app's vertical rhythm. KEY!
-$headerH:  $base-line-height * 1.5 !default;
-
-$mui-appbar-height:              $headerH;
-$mui-appbar-height-xs-portrait:  $headerH;
+$headerH: $base-line-height * 1.5 !default;
+$mui-appbar-height: $headerH;
+$mui-appbar-height-xs-portrait: $headerH;
 $mui-appbar-height-xs-landscape: $headerH;
-
-$mui-base-font-family:  -apple-system, BlinkMacSystemFont, “Segoe UI”, Roboto, Helvetica, Arial, sans-serif;
-$mui-base-font-color:     $primary-text-color;
-$mui-base-font-size:      $base-line-height * .65; // golden ratio as % of line-height
+$mui-base-font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”, Roboto, Helvetica, Arial, sans-serif;
+$mui-base-font-color: $primary-text-color;
+$mui-base-font-size: $base-line-height * .65; // golden ratio as % of line-height
 $mui-base-font-smoothing: true;
-
-$box-shad     : 0 2px 3px rgba(0,0,0,0.4);
-$box-shad__hov: 0 3px 4px rgba(0,0,0,0.7);
+$box-shad: 0 2px 3px rgba(0,0,0,.4);
+$box-shad__hov: 0 3px 4px rgba(0,0,0,.7);
 
 @import 'sass/mui';
 
@@ -29,74 +26,78 @@ html {
 }
 
 body {
-	min-height: 100vh;
-	color: $primary-text-color;
+	animation: none;
 	background-color: white;
-	overflow-y: auto;
-	overflow-x: hidden;
-	animation:none;
-	margin: 0;	
+	color: $primary-text-color;
 	display: flex;
 	flex-direction: column;
+	margin: 0;
+	min-height: 100vh;
+	overflow-x: hidden;
+	overflow-y: auto;
 }
 
 // Shell with menu bar and navigation  ================================================
-#appbar, #sidedrawer {
+#appbar,
+#sidedrawer {
 	position: fixed;
 	top: 0;
 }
 
-#sidedrawer  {
+#sidedrawer {
+	background-color: $primary-color-light;
 	left: -201px;
+	overflow: hidden;
+	position: absolute;
 	width: 200px;
 	z-index: 200;
-
-	position: absolute;
-	overflow: hidden;
-	background-color: $primary-color-light;
 }
 
 // We keep most of sidedrawer in _sidedrawer.scss to make this file easier to read.
 @import '_sidedrawer';
 
 // brand
-#sidedrawer--brand, #appbar--brand  { 
+#sidedrawer--brand,
+#appbar--brand {
 	text-decoration: none;
 }
 
-#sidedrawer--brand:hover, #appbar--brand:hover  {
+#sidedrawer--brand:hover,
+#appbar--brand:hover {
 	cursor: pointer;
 }
 
 #appbar {
-	vertical-align: middle;
-	left: 0;
-	max-width: 100vw;
-	min-width: 100vw;	
-	overflow: hidden;
-	color: $primary-color-light;
+	align-content: space-between;
 	background-color: $primary-color-dark;
-	z-index: 100;
-	line-height: $headerH;
-	height: $headerH;
 	box-shadow: $box-shad;
+	color: $primary-color-light;
 	display: flex;
 	flex-direction: row;
-	align-content: space-between;
+	height: $headerH;
+	left: 0;
+	line-height: $headerH;
+	max-width: 100vw;
+	min-width: 100vw;
+	overflow: hidden;
+	vertical-align: middle;
+	z-index: 100;
 }
 
 #appbar a {
 	color: $primary-color-light;
-	text-decoration: none;		
+	text-decoration: none;
 }
 
-#appbar--menu, #appbar--brand, #sidebar--brand {
-	vertical-align: middle;
-	line-height: $headerH;
+#appbar--menu,
+#appbar--brand,
+#sidebar--brand {
+	border: 0;
 	height: $headerH;
+	line-height: $headerH;
 	margin: 0;
 	padding: 0;
-	border: 0;
+	vertical-align: middle;
 }
 
 #appbar--push {
@@ -107,7 +108,7 @@ body {
 	margin-right: $mui-base-font-size *1.5;
 }
 
-#appbar--menu li { 
+#appbar--menu li {
 	transition: background-color .2s ease; // optional
 }
 
@@ -117,7 +118,7 @@ body {
 	line-height: $headerH;
 }
 
-#appbar--menu a { 
+#appbar--menu a {
 	transition: color .2s ease-in; // optional
 }
 
@@ -128,11 +129,12 @@ body {
 
 // Shell Content ======================================================================
 #content-wrapper {
-	margin-top: $headerH;
-	flex-grow: 1;
-	width: 100vw;
 	//font-family: 'Noto Serif', serif;
 	background-color: white;
+	margin-top: $headerH;
+	width: 100vw;
+
+	flex-grow: 1;
 }
 
 #content-wrapper * {
@@ -142,23 +144,22 @@ body {
 
 // Footer, sticky but not fixed (scrolls out of view when body is tall) ===============================================
 #footer {
-	max-width: 100vw;
-	min-width: 100vw;
-	min-height: 1.5 * $base-line-height;
-	color: $primary-text-color;
 	background-color: $primary-color;
+	color: $primary-text-color;
+	max-width: 100vw;
+	min-height: 1.5 * $base-line-height;
+	min-width: 100vw;
 	overflow: hidden;
 	z-index: 50;
-
 }
 
 #footer_div {
+	align-content: space-between;
 	display: flex;
 	flex-direction: row;
-	align-content: space-between;
-	padding-top: $base-line-height *.25;
 	padding-left: $base-line-height *.5;
 	padding-right: $base-line-height *.85;
+	padding-top: $base-line-height *.25;
 }
 
 #footer_div--push {
