@@ -43,7 +43,7 @@ Explore:
 
 Click menu "Two" and notice that the header (menu bar) is not reloaded - we have an "Application" look and feel, like a single-page application (SPA). Also click the ☰ menu to see the sidebar menu slide out. On a small screen it will overlap. Page "Two" has an AMP version. In production, we would use subdomains www. or m. to differentiate versions.
 
-You can use any IDE for edits. We like  [VS Code](<https://code.visualstudio.com/download>). We recommend using and SASS for CSS and Pug/Jade. Watch a great Pug intro video [here](<http://youtu.be/wzAWI9h3q18>).
+You can use any IDE for edits. We like  [VS Code](<https://code.visualstudio.com/download>). We recommend using and SASS for CSS and Pug/Jade. Watch a great Pug intro video [here](<http://youtu.be/wzAWI9h3q18>). Also check https://github.com/pugjs/pug-cli
 
 Download, install and run Prepros (Unlimited Trial) from <https://prepros.io/downloads>. Use the bottom left "+" button to add the /helloworld-webroot folder under /topseed/web-app/helloworld-webroot as a new project. In Project/Settings/Compiler Settings/Markdown, uncheck "Wrap with Html". 
 
