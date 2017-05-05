@@ -37,6 +37,10 @@ body {
 	overflow-y: auto;
 }
 
+amp-img, img {
+	background-color: grey;
+}
+
 // Shell with menu bar and navigation  ================================================
 #appbar,
 #sidedrawer {
@@ -105,12 +109,10 @@ body {
 }
 
 #appbar--menu {
+	color: $primary-color-text ;
 	margin-right: $mui-base-font-size *1.5;
 }
 
-#appbar--menu li {
-	transition: background-color .2s ease; // optional
-}
 
 #appbar--menu li:hover {
 	background-color: $accent-color;

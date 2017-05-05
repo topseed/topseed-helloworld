@@ -18,6 +18,7 @@ loadjs.ready(['dependencyIE', 'keyLibs'], {// loaded setup libs
 	}//suc
 })
 
+//========================================================
 function startApp(){
 	// READY ///////////////////////////////////////////////////////////
 	loadjs.done('app-ready') // page ready

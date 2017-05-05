@@ -143,7 +143,7 @@ template { display: none; }
 
 html { font-size: 10px; -webkit-tap-highlight-color: transparent; }
 
-body { font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”, Roboto, Helvetica, Arial, sans-serif; font-size: 15.6px; font-weight: 400; line-height: 1.429; color: #000; background-color: #FFF; }
+body { font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”, Roboto, Helvetica, Arial, sans-serif; font-size: 15.6px; font-weight: 400; line-height: 1.429; color: #000000; background-color: #FFF; }
 
 a { color: #2196F3; text-decoration: none; }
 
@@ -189,19 +189,19 @@ html, body, button, input, textarea { -webkit-font-smoothing: antialiased; -moz-
 .mui-appbar { background-color: #2196F3; color: #FFF; }
 
 /** MUI Buttons */
-.mui-btn { font-weight: 500; font-size: 14px; line-height: 18px; text-transform: uppercase; color: #000; background-color: #FFF; transition: all 0.2s ease-in-out; display: inline-block; height: 36px; padding: 0 26px; margin: 6px 0; border: none; border-radius: 2px; cursor: pointer; -ms-touch-action: manipulation; touch-action: manipulation; background-image: none; text-align: center; line-height: 36px; vertical-align: middle; white-space: nowrap; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; font-size: 14px; font-family: inherit; letter-spacing: 0.03em; position: relative; overflow: hidden; }
+.mui-btn { font-weight: 500; font-size: 14px; line-height: 18px; text-transform: uppercase; color: #000000; background-color: #FFF; transition: all 0.2s ease-in-out; display: inline-block; height: 36px; padding: 0 26px; margin: 6px 0; border: none; border-radius: 2px; cursor: pointer; -ms-touch-action: manipulation; touch-action: manipulation; background-image: none; text-align: center; line-height: 36px; vertical-align: middle; white-space: nowrap; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; font-size: 14px; font-family: inherit; letter-spacing: 0.03em; position: relative; overflow: hidden; }
 
-.mui-btn:hover, .mui-btn:focus, .mui-btn:active { color: #000; background-color: white; }
+.mui-btn:hover, .mui-btn:focus, .mui-btn:active { color: #000000; background-color: white; }
 
-.mui-btn[disabled]:hover, .mui-btn[disabled]:focus, .mui-btn[disabled]:active { color: #000; background-color: #FFF; }
+.mui-btn[disabled]:hover, .mui-btn[disabled]:focus, .mui-btn[disabled]:active { color: #000000; background-color: #FFF; }
 
-.mui-btn.mui-btn--flat { color: #000; background-color: transparent; }
+.mui-btn.mui-btn--flat { color: #000000; background-color: transparent; }
 
-.mui-btn.mui-btn--flat:hover, .mui-btn.mui-btn--flat:focus, .mui-btn.mui-btn--flat:active { color: #000; background-color: #f2f2f2; }
+.mui-btn.mui-btn--flat:hover, .mui-btn.mui-btn--flat:focus, .mui-btn.mui-btn--flat:active { color: #000000; background-color: #f2f2f2; }
 
-.mui-btn.mui-btn--flat[disabled]:hover, .mui-btn.mui-btn--flat[disabled]:focus, .mui-btn.mui-btn--flat[disabled]:active { color: #000; background-color: transparent; }
+.mui-btn.mui-btn--flat[disabled]:hover, .mui-btn.mui-btn--flat[disabled]:focus, .mui-btn.mui-btn--flat[disabled]:active { color: #000000; background-color: transparent; }
 
-.mui-btn:hover, .mui-btn:focus, .mui-btn:active { outline: 0; text-decoration: none; color: #000; }
+.mui-btn:hover, .mui-btn:focus, .mui-btn:active { outline: 0; text-decoration: none; color: #000000; }
 
 .mui-btn:hover, .mui-btn:focus { box-shadow: 0 0px 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2); }
 
@@ -345,7 +345,7 @@ html, body, button, input, textarea { -webkit-font-smoothing: antialiased; -moz-
 .mui--divider-right { border-right: 1px solid rgba(0, 0, 0, 0.12); }
 
 /** MUI Form Component */
-.mui-form legend { display: block; width: 100%; padding: 0; margin-bottom: 11px; font-size: 23.4px; color: #000; line-height: inherit; border: 0; }
+.mui-form legend { display: block; width: 100%; padding: 0; margin-bottom: 11px; font-size: 23.4px; color: #000000; line-height: inherit; border: 0; }
 
 .mui-form fieldset { border: 0; padding: 0; margin: 0 0 20px 0; }
 
@@ -568,7 +568,7 @@ html, body, button, input, textarea { -webkit-font-smoothing: antialiased; -moz-
 
 .mui-textfield--wrap-label:not(.mui-textfield--float-label) > label { display: table-header-group; position: static; white-space: normal; overflow-x: visible; }
 
-.mui-textfield > input, .mui-textfield > textarea { box-sizing: border-box; display: block; background-color: transparent; color: #000; border: none; border-bottom: 1px solid rgba(0, 0, 0, 0.26); outline: none; width: 100%; padding: 0; box-shadow: none; border-radius: 0px; font-size: 16px; font-family: inherit; line-height: inherit; background-image: none; }
+.mui-textfield > input, .mui-textfield > textarea { box-sizing: border-box; display: block; background-color: transparent; color: #000000; border: none; border-bottom: 1px solid rgba(0, 0, 0, 0.26); outline: none; width: 100%; padding: 0; box-shadow: none; border-radius: 0px; font-size: 16px; font-family: inherit; line-height: inherit; background-image: none; }
 
 .mui-textfield > input:focus, .mui-textfield > textarea:focus { border-color: #2196F3; border-width: 2px; }
 
@@ -793,11 +793,13 @@ html, body, button, input, textarea { -webkit-font-smoothing: antialiased; -moz-
 
 html { line-height: 24px; min-height: 100vh; }
 
-body { min-height: 100vh; color: #000; background-color: white; overflow-y: auto; overflow-x: hidden; -webkit-animation: none; animation: none; margin: 0; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
+body { -webkit-animation: none; animation: none; background-color: white; color: #000000; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; margin: 0; min-height: 100vh; overflow-x: hidden; overflow-y: auto; }
+
+amp-img, img { background-color: grey; }
 
 #appbar, #sidedrawer { position: fixed; top: 0; }
 
-#sidedrawer { left: -201px; width: 200px; z-index: 200; position: absolute; overflow: hidden; background-color: #C5CAE9; }
+#sidedrawer { background-color: #c5cae9; left: -201px; overflow: hidden; position: absolute; width: 200px; z-index: 200; }
 
 #sidedrawer { min-height: 100vh; transition: -webkit-transform .15s ease; transition: transform .15s ease; transition: transform .15s ease, -webkit-transform .15s ease; }
 
@@ -805,39 +807,37 @@ body { min-height: 100vh; color: #000; background-color: white; overflow-y: auto
 
 #sidedrawer a { text-decoration: none; }
 
-#sidedrawer--brand { vertical-align: middle; height: 36px; line-height: 36px; }
+#sidedrawer--brand { height: 36px; line-height: 36px; vertical-align: middle; }
 
-#sidedrawer--menu li { overflow: hidden; line-height: 36px; padding-left: 30px; }
+#sidedrawer--menu li { line-height: 36px; overflow: hidden; padding-left: 30px; }
 
-#sidedrawer--menu li:hover { background-color: #FF5722; }
+#sidedrawer--menu li:hover { background-color: #ff5722; }
 
 #sidedrawer--brand, #appbar--brand { text-decoration: none; }
 
 #sidedrawer--brand:hover, #appbar--brand:hover { cursor: pointer; }
 
-#appbar { vertical-align: middle; left: 0; max-width: 100vw; min-width: 100vw; overflow: hidden; color: #C5CAE9; background-color: #303F9F; z-index: 100; line-height: 36px; height: 36px; box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4); display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-align-content: space-between; -ms-flex-line-pack: justify; align-content: space-between; }
+#appbar { -webkit-align-content: space-between; -ms-flex-line-pack: justify; align-content: space-between; background-color: #303f9f; box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4); color: #c5cae9; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; height: 36px; left: 0; line-height: 36px; max-width: 100vw; min-width: 100vw; overflow: hidden; vertical-align: middle; z-index: 100; }
 
-#appbar a { color: #C5CAE9; text-decoration: none; }
+#appbar a { color: #c5cae9; text-decoration: none; }
 
-#appbar--menu, #appbar--brand, #sidebar--brand { vertical-align: middle; line-height: 36px; height: 36px; margin: 0; padding: 0; border: 0; }
+#appbar--menu, #appbar--brand, #sidebar--brand { border: 0; height: 36px; line-height: 36px; margin: 0; padding: 0; vertical-align: middle; }
 
 #appbar--push { -webkit-flex-grow: 1; -ms-flex-positive: 1; flex-grow: 1; }
 
-#appbar--menu { margin-right: 23.4px; }
+#appbar--menu { color: #ffffff; margin-right: 23.4px; }
 
-#appbar--menu li { transition: background-color .2s ease; }
-
-#appbar--menu li:hover { background-color: #FF5722; cursor: pointer; line-height: 36px; }
+#appbar--menu li:hover { background-color: #ff5722; cursor: pointer; line-height: 36px; }
 
 #appbar--menu a { transition: color .2s ease-in; }
 
-#appbar--menu a:hover { color: #FFF; }
+#appbar--menu a:hover { color: #ffffff; }
 
-#content-wrapper { margin-top: 36px; -webkit-flex-grow: 1; -ms-flex-positive: 1; flex-grow: 1; width: 100vw; background-color: white; }
+#content-wrapper { background-color: white; margin-top: 36px; width: 100vw; -webkit-flex-grow: 1; -ms-flex-positive: 1; flex-grow: 1; }
 
-#footer { max-width: 100vw; min-width: 100vw; min-height: 36px; color: #000; background-color: #3F51B5; overflow: hidden; z-index: 50; }
+#footer { background-color: #3f51b5; color: #000000; max-width: 100vw; min-height: 36px; min-width: 100vw; overflow: hidden; z-index: 50; }
 
-#footer_div { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-align-content: space-between; -ms-flex-line-pack: justify; align-content: space-between; padding-top: 6px; padding-left: 12px; padding-right: 20.4px; }
+#footer_div { -webkit-align-content: space-between; -ms-flex-line-pack: justify; align-content: space-between; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; padding-left: 12px; padding-right: 20.4px; padding-top: 6px; }
 
 #footer_div--push { -webkit-flex-grow: 1; -ms-flex-positive: 1; flex-grow: 1; }
 
@@ -845,11 +845,11 @@ body { min-height: 100vh; color: #000; background-color: white; overflow-y: auto
 
 html { position: relative; }
 
-body { min-height: 1vh; margin-bottom: 36px; }
+body { margin-bottom: 36px; min-height: 1vh; }
 
 #ss1 { display: block; }
 
-#footer { height: 36px; position: absolute; left: 0; bottom: 0; }
+#footer { bottom: 0; height: 36px; left: 0; position: absolute; }
 
 @media (max-width: 600px) { body { margin-bottom: 60px; }
   #footer { height: 60px; }
