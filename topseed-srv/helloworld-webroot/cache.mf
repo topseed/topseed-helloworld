@@ -2,7 +2,7 @@ CACHE MANIFEST
 # load stable assets once and freeze on client, even if asset changes, it won't ping
 
 #index assets
-https://hello.appthings.io/favicon.ico
+https://hello.topseed.io/favicon.ico
 https://code.jquery.com/jquery-3.2.1.slim.min.js
 https://cdn.rawgit.com/topseed/topseed-shellcache/master/vendor/loadjs.min.js'
 https://cdn.jsdelivr.net/fetch/2.0.1/fetch.min.js
