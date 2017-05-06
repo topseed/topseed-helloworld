@@ -8,35 +8,27 @@ loadjs.ready(['dependencyIE', 'keyLibs'], {// loaded setup libs
 			'/_js/vendor/jquery.jsForm.min.js'
 
 			], { success: function(){
-				console.log('loaded libs')
-				startApp()
+				console.log('Loaded libs')
+				libsLoaded()
 			}
 	})//loadjs
 	}//suc
 })
 
-//========================================================
-function startApp(){
-	// READY ///////////////////////////////////////////////////////////
-	loadjs.done('app-ready') // page ready
+function libsLoaded(){
+	
+	loadjs.done('app-ready') // notify pages that all libs are loaded
 
 	SP.ScontentID ='#content-wrapper'
-	SP.smoothPg.add(function(typ, $new, delta, $html) {
-		if(SP.PRE==typ)  {//start
+
+	SP.smoothPg.add(function(type, $new, delta, $html) {
+		if(SP.PRE==type)  {//start
 			console.log($new)
-			//$('#content-wrapper').fadeTo(100,.2)
+			//e.g. $('#content-wrapper').fadeTo(100,.2) 
 		}
-		if(SP.PAGE==typ)  {//ready
+		if(SP.PAGE==type)  {//ready, set content in content-wrapper
 			$(SP.ScontentID).html($new)
-			//$('#content-wrapper').fadeTo(100,1)
+			//e.g. $('#content-wrapper').fadeTo(100,1)
 		}
 	})
-
-}//startApp()
-
-// /////////////////////////
-function preLImg(arg) { // helper function start loading an image so browser has it ready
-	var imag = new Image()
-	imag.src = arg
 }
-
