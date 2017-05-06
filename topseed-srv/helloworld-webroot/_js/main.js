@@ -19,16 +19,17 @@ function libsLoaded(){
 	
 	loadjs.done('app-ready') // notify pages that all libs are loaded
 
-	SP.ScontentID ='#content-wrapper'
+	//shellcache. When not using shellcache, comment out the following:
+	SC.ScontentID ='#content-wrapper'
 
-	SP.smoothPg.add(function(type, $new, delta, $html) {
-		if(SP.PRE==type)  {//start
+	SC.smoothPg.add(function(type, $new, delta, $html) {
+		if (SC.PRE==type)  {//start
 			console.log($new)
 			//e.g. $('#content-wrapper').fadeTo(100,.2) 
 		}
-		if(SP.PAGE==type)  {//ready, set content in content-wrapper
-			$(SP.ScontentID).html($new)
+		if(SC.PAGE==type)  {//ready, set content in content-wrapper
+			$(SC.ScontentID).html($new)
 			//e.g. $('#content-wrapper').fadeTo(100,1)
 		}
-	})
+	}) //end shellcache
 }

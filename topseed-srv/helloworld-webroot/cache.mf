@@ -4,7 +4,7 @@ CACHE MANIFEST
 #index assets
 https://hello.appthings.io/favicon.ico
 https://code.jquery.com/jquery-3.2.1.slim.min.js
-https://cdn.rawgit.com/puppetmaster3/smoothState.js/master/deps/loadjs.min.js
+https://cdn.rawgit.com/topseed/topseed-shellcache/master/vendor/loadjs.min.js'
 https://cdn.jsdelivr.net/fetch/2.0.1/fetch.min.js
 
 https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic&lang=en
