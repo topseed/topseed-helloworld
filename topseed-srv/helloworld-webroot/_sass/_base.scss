@@ -64,7 +64,7 @@ body {
 	@extend .mui--z1;
 	display: flex;
 	flex-direction: row;
-	align-content: space-between;
+	justify-content: space-between;
 	background-color: $primary-color-dark;
 	color: $primary-color-light;
 	height: $headerH;
@@ -73,13 +73,13 @@ body {
 	max-width: 100vw;
 	min-width: 100vw;
 	overflow: hidden;
-	vertical-align: middle;
 	z-index: 100;
 }
 
 #appbar a {
 	color: $primary-color-light;
 	text-decoration: none;
+	outline: 0;
 }
 
 #appbar--menu,
@@ -92,14 +92,10 @@ body {
 	vertical-align: middle;
 }
 
-#appbar--push {
-	flex-grow: 1;
-}
-
 #appbar--menu {
 	@extend .mui-list--inline;
 	color: $primary-color-text;
-	margin-right: $mui-base-font-size *1.5;
+	margin-right: $mui-base-font-size *1.3;
 }
 
 #appbar--menu li:hover {
@@ -135,6 +131,7 @@ body {
 	color: $primary-text-color;
 	max-width: 100vw;
 	min-height: $headerH; //1.5 * $base-line-height;
+	line-height: $headerH;
 	min-width: 100vw;
 	overflow: hidden;
 	z-index: 50;
@@ -143,18 +140,15 @@ body {
 #footer_div {
 	display: flex;
 	flex-direction: row;
-	align-content: space-between;
-	min-height: $headerH;
-	padding-left: $base-line-height *.5;
-	padding-right: $base-line-height *.85;
-	padding-top: $base-line-height *.25;
-	padding-bottom: $base-line-height *.25;
-}
-
-#footer_div--push {
-	flex-grow: 1;
+	justify-content: space-between;
+	margin-left: $mui-base-font-size * .8; 
+	margin-right: $mui-base-font-size * 1.3;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: $mui-base-font-size * .4;
+	padding-bottom: $mui-base-font-size * .4;
 }
 
 #footer_div--right {
-	margin-right: $mui-base-font-size *1.5;
+	padding-right: 5px; //same as .mui-list--inline li in appbar
 }
