@@ -1,0 +1,18 @@
+extends  ../../_part/_baseShell
+
+block head
+	title Page One
+	include ../../_part/_header
+
+block main
+	.mui-container-fluid
+		p
+		p Hello from Page One!
+
+	script.
+		function init() {
+		}
+		onAppReady(init)
+
+block footer
+	include ../../_part/_footer

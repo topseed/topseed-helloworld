@@ -1,0 +1,25 @@
+#appbar
+	#appbar--brand(onclick='openDrawer()') &nbsp; ☰ &nbsp;
+		span.mui--hidden-xs Topseed&trade; Hello
+	#appbar--push
+	ul#appbar--menu
+		li
+			a(href='/page/one/') One
+		li
+			a(href='/page/two/') Two
+
+#sidedrawer(onclick='closeDrawer()')
+	#sidedrawer--brand &nbsp; ☰ Topseed&trade; Hello
+	.mui-divider
+	ul#sidedrawer--menu
+		li
+			a(href='/page/one/') One
+		li
+			a(href='/page/two/') Two
+script.
+	function openDrawer(px, e) {
+		$('#sidedrawer').css('transform', 'translateX(201px)')
+	}
+	function closeDrawer(e) {
+		$('#sidedrawer').css('transform', 'translateX(0px)')
+	}			
