@@ -1849,13 +1849,14 @@ body {
 
 #sidedrawer--menu li {
   line-height: 36px;
-  overflow: hidden;
-  padding-left: 30px; }
+  overflow: hidden; }
 
 #sidedrawer--menu li:hover {
   background-color: #ff5722; }
 
 #sidedrawer--menu li a {
+  display: block;
+  padding-left: 28px;
   transition: color .2s ease-in; }
 
 #sidedrawer--menu li a:hover {

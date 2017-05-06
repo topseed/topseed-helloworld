@@ -28,13 +28,11 @@
 
 #sidedrawer--menu {
 	@extend .mui-list--unstyled;
-	
 }
 
 #sidedrawer--menu li {
 	line-height: $headerH;
 	overflow: hidden;
-	padding-left: 30px;
 }
 
 #sidedrawer--menu li:hover {
@@ -42,6 +40,8 @@
 }
 
 #sidedrawer--menu li a {
+	display: block;
+	padding-left: 28px;
 	transition: color .2s ease-in; // optional
 }
 
