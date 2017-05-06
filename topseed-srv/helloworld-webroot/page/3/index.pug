@@ -1,9 +1,14 @@
 extends  ../../_part/_baseShell
 
 block head
-	title Page 3
+	title Fullpage Demo
 	include ../../_part/_header
-
+	//-link(href='https://cdn.jsdelivr.net/jquery/3.2.0/jquery.min.js', rel='preload', as='script')
+	//-link(href='/_js/vendor/jquery.fullpage.min.js', rel='preload', as='script')
+	//script(src='https://cdn.jsdelivr.net/jquery/3.2.0/jquery.min.js')
+	script(href='/_js/vendor/jquery.fullpage.min.js')
+	link(href='/_js/vendor/jquery.fullpage.min.css', rel='stylesheet')
+	
 block main
 	style.
 		.section {
@@ -12,10 +17,10 @@ block main
 			background-image: url(res/beach768.jpg);
 		}
 
-		.section1{
+		.section1 {
 			background-image: url(res/beach768.jpg);
 		}
-		.section2{
+		.section2 {
 			background-image: url(res/city768.jpg);
 		}
 		.section3{
@@ -29,22 +34,22 @@ block main
 		.section1.section
 			.mui-container-fluid
 				.mui-panel
-					H3 Oh Hi 1
+					H3 Section 1. Scroll down for more
 
 		.section2.section
 			.mui-container-fluid
 				.mui-panel
-					H3 Oh Hi 2
+					H3 Welcome to Section 2
 
 		.section3.section
 			.mui-container-fluid
 				.mui-panel
-					H3 Oh Hi 3
+					H3 Hi, I'm Section 3. We're friends now.
 
 		.section4.section
 			.mui-container-fluid
 				.mui-panel
-					H3 Oh Hi 4
+					H3 This is the last Section. Good Bye!
 
 
 	script.

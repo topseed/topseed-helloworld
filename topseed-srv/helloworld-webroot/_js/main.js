@@ -4,11 +4,8 @@ loadjs.ready(['dependencyIE', 'keyLibs'], {// loaded setup libs
 
 		loadjs([
 
-			'/_js/vendor/jquery.fullpage.min.css'
-			,'/_js/vendor/jquery.fullpage.min.js'
-
-			//data
-			,'/_js/vendor/jquery.jsForm.min.js'
+			//e.g. data
+			'/_js/vendor/jquery.jsForm.min.js'
 
 			], { success: function(){
 				console.log('loaded libs')
