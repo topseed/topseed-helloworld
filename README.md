@@ -49,7 +49,7 @@ Download, install and run Prepros (Unlimited Trial) from <https://prepros.io/dow
 
 When you edit /web-app/helloworld-webroot/home/story1.md and save, Prepros will convert the markdown file into html. Refresh the browser and see the change you made.
 
-Check <https://github.com/puppetmaster3/smoothState.js>, a fork of SmoothState.js, one of our favorite libs.
+Check <https://github.com/topseed/topseed-turbo>, a fork of SmoothState.js, one of our favorite libs.
 Explore <https://zeit.co>, one way to deploy to the web. You deploy the web-app folder after deleting the node_modules folder.
 
 Some other buzwords that resonated with us:
@@ -60,7 +60,7 @@ Some other buzwords that resonated with us:
 - Agile
 - Digital Craftmanship
 
-For more: <http://github.com/topseed/topseed-demos>
+For more: <http://github.com/topseed/topseed>
 
-For forum: <http://gitter.im/topseed-demos/Lobby>
+For forum: <http://gitter.im/topseed/Lobby>
 
