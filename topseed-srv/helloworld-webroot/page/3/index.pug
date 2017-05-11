@@ -53,13 +53,14 @@ block main
 
 
 	script.
-		function init() {
+		ST.onAppReady(UIinit)
+		function UIinit() {
+			console.log('x')
 			$('#fullpage').fullpage({
 				//verticalCentered: false,
 				css3:false
 			})//config
 		}
-		onAppReady(init)
 
 block footer
 	include ../../_part/_footer

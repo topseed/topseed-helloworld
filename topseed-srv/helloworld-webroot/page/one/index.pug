@@ -10,11 +10,11 @@ block main
 		p Hello from Page One!
 
 	script.
-		function init() {
-			if (console) console.log('Page One init')
-			//do custom stuff with loaded libs here
+		ST.onAppReady(UIinit)
+		function UIinit() {
+			console.log('x')
 		}
-		onAppReady(init)
+
 
 block footer
 	include ../../_part/_footer

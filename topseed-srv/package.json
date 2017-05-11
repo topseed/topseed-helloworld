@@ -4,7 +4,6 @@
 	, "repository": { "type": "git", "url" : "https://github.com/topseed/topseed-helloworld.git"}
 	, "license": "MIT"
 	, "engines": { "npm" : ">=4.2", "node": ">=7.6" }
-	, "scripts": { "start": "node index" }
 	, "dependencies": { 
 		"express": ">=4.1"
 	}

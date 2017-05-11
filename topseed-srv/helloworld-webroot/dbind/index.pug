@@ -1,7 +1,7 @@
-extends  ../../_part/_baseShell
+extends  ../_part/_baseShell
 
 block head
-	include ../../_part/_header
+	include ../_part/_header
 
 block main
 	.mui-container-fluid
@@ -24,8 +24,9 @@ block main
 						button.mui-btn.mui-btn--raised(type='submit')#login Existing/Log-in
 
 	script.
-		function init() {
-			console.log('init')
+		ST.onAppReady(UIinit)
+		function UIinit() {
+			console.log('x')
 			$('#frm1').jsForm()
 			
 			$('#join').click(function(e) { 
@@ -35,7 +36,5 @@ block main
 			})
 		}
 
-		onAppReady(init)
-
 block footer
-	include ../../_part/_footer
+	include ../_part/_footer

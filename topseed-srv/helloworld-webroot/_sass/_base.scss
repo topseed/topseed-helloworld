@@ -1,4 +1,4 @@
-// AMP & Flexbox layout
+// AMP & Flexbox layout vhw
 // main.sass may also import _classicFooter.scss overrides for compatibility with IE.
 
 // Default M.ui variables (See muicss.com) ============================================
@@ -12,7 +12,7 @@ $mui-base-font-color: $primary-text-color;
 $mui-base-font-size: $base-line-height * .65; // golden ratio as % of line-height
 $mui-base-font-smoothing: true;
 
-@import '_imports/mui';
+@import 'sass/mui';
 
 * {
 	font-family: $mui-base-font-family;
@@ -106,7 +106,7 @@ body {
 }
 
 #appbar--menu a {
-	transition: color .2s ease-in; // optional
+//	transition: color .2s ease-in; // optional
 }
 
 #appbar--menu a:hover {

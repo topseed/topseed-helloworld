@@ -4,11 +4,9 @@ loadjs.ready(['dependencyIE', 'keyLibs'], {// loaded setup libs
 
 		loadjs([
 
-			//e.g. data
 			'/_js/vendor/jquery.jsForm.min.js'
 
 			], { success: function(){
-				console.log('Loaded libs')
 				libsLoaded()
 			}
 	})//loadjs
@@ -16,20 +14,21 @@ loadjs.ready(['dependencyIE', 'keyLibs'], {// loaded setup libs
 })
 
 function libsLoaded(){
+	console.log('Loaded libs')
 	
-	loadjs.done('app-ready') // notify pages that all libs are loaded
+	ST.signalAppReady()
 
-	//shellcache. When not using shellcache, comment out the following:
 	TT.ScontentID ='#content-wrapper'
+	TT.handle(function(evt) {
+		console.log(':')
+		if(TT.PRE==evt.typ)  {//start
+			console.log(evt.$new)
+			//$('#content-wrapper').fadeTo(100,.2)
+		}
+		if(TT.PAGE==evt.typ)  {//new pg loaded
+			$(TT.ScontentID).html(evt.$new)
+			//$('#content-wrapper').fadeTo(100,1)
 
-	TT.smoothPg.add(function(type, $new, delta, $html) {
-		if (TT.PRE==type)  {//start
-			console.log($new)
-			//e.g. $('#content-wrapper').fadeTo(100,.2) 
 		}
-		if(TT.PAGE==type)  {//ready, set content in content-wrapper
-			$(TT.ScontentID).html($new)
-			//e.g. $('#content-wrapper').fadeTo(100,1)
-		}
-	}) //end shellcache
+	})
 }
