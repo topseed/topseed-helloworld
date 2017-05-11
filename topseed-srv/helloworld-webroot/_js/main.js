@@ -16,7 +16,7 @@ loadjs.ready(['dependencyIE', 'keyLibs'], {// loaded setup libs
 function libsLoaded(){
 	console.log('Loaded libs')
 	
-	ST.signalAppReady()
+	TS.signalAppReady()
 
 	TT.ScontentID ='#content-wrapper'
 	TT.handle(function(evt) {
