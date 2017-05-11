@@ -17,6 +17,9 @@ package-lock.json
 
 ###################### Other
 **/.project
+**/.idea
+
+
 **/.cfignore
 
 **/*.log

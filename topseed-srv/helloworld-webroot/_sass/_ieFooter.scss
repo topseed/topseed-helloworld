@@ -1,4 +1,3 @@
-// Overrides for non-AMP (classic)
 // Compatible with IE 11 (IE does not fully support flexbox)
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -6,7 +5,7 @@
 
 	// footer is 1 or 2 lines depending on media query below
 	$footerH1: $base-line-height * 2 !default;
-	$footerH2: $base-line-height * 2 !default; //increase for smaller devices
+	$footerH2: $base-line-height * 2 !default; //increase for taller footer on smaller devices
 
 	html {
 		position: relative; // for absolute footer
