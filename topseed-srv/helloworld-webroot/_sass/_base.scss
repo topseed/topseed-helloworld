@@ -12,7 +12,7 @@ $mui-base-font-color: $primary-text-color;
 $mui-base-font-size: $base-line-height * .65; // golden ratio as % of line-height
 $mui-base-font-smoothing: true;
 
-@import 'sass/mui';
+@import '_import/mui';
 
 * {
 	font-family: $mui-base-font-family;
