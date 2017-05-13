@@ -13,6 +13,9 @@ Icon\r
 .csscomb.json
 tsconfig.json
 
+**/package-lock.json
+
+
 ###################### Other
 **/.project
 **/.idea
