@@ -1,6 +1,4 @@
 'use strict'
-const ROOT = 'http://jsonplaceholder.typicode.com/'
-
 loadjs.ready(['dependencyIE', 'keyLibs'], {// loaded setup libs
 	success: function(){
 		loadjs([
@@ -16,33 +14,33 @@ loadjs.ready(['dependencyIE', 'keyLibs'], {// loaded setup libs
 })
 
 
+const ROOT = 'http://jsonplaceholder.typicode.com/'
 function tst1() {
-// class:
-class Page1BDS extends BDS {
-	doFetch() {
-		return BDS.fetch(window.fetch, ROOT, 'comments')
-			.then(function(value) { 
-				console.log('back')
-				console.log(JSON.stringify(value))
-				return value
-		})//BDS
-	}//doFetch
-}//class
-const ds = new Page1BDS()
-QUnit.test( 'test: fetch()', function( assert ) {
-	//assert.expect(1)
-	const done = assert.async()
+	// class:
+	class Page1BDS extends BDS {
+		doFetch() {
+			return BDS.fetch(window.fetch, ROOT, 'comments')
+				.then(function(value) { 
+					console.log('back')
+					console.log(JSON.stringify(value))
+					return value
+			})//BDS
+		}//doFetch
+	}//class
+	const ds = new Page1BDS()
+	QUnit.test( 'test: fetch()', function( assert ) {
+		//assert.expect(1)
+		const done = assert.async()
 
-	const pro = ds.doFetch()
-	pro.then(function(val) {
-		console.log(val)
-		assert.ok(true, 'we got ata')
-		done()
+		const pro = ds.doFetch()
+		pro.then(function(val) {
+			console.log(val)
+			assert.ok(true, 'we got data')
+			done()
 
-	}).catch(function (er) {
-		console.log(er)
-	})//c
+		}).catch(function (er) {
+			console.log(er)
+		})//c
+	})//qu
 
-
-})
 }

@@ -8,6 +8,8 @@ class BDS {
 				method: 'post'
 				, headers: {
 					'Content-Type': 'application/json',
+					'Accept':'application/json',
+					 credentials: 'same-origin' //res.cookie returned
 				}
 				, body: JSON.stringify(data_)
 			}).then(function(response) { //2 returns a promise
