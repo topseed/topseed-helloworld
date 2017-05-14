@@ -1,6 +1,23 @@
-
-// class:
+'use strict'
 const ROOT = 'http://jsonplaceholder.typicode.com/'
+
+loadjs.ready(['dependencyIE', 'keyLibs'], {// loaded setup libs
+	success: function(){
+		loadjs([
+			'/_js/BDS.js'
+			//,'/_js/BPS.js'
+
+			], { success: function(){
+				console.log('loaded')
+				tst1()
+			}
+	})//loadjs
+	}//suc
+})
+
+
+function tst1() {
+// class:
 class Page1BDS extends BDS {
 	doFetch() {
 		return BDS.fetch(window.fetch, ROOT, 'comments')
@@ -11,21 +28,21 @@ class Page1BDS extends BDS {
 		})//BDS
 	}//doFetch
 }//class
-
-//tst
-const _BDS = new Page1BDS()
+const ds = new Page1BDS()
 QUnit.test( 'test: fetch()', function( assert ) {
-	assert.expect(0)
-	var done = assert.async()
+	//assert.expect(1)
+	const done = assert.async()
 
-	const pro = _BDS.doFetch()
+	const pro = ds.doFetch()
 	pro.then(function(val) {
 		console.log(val)
+		assert.ok(true, 'we got ata')
+		done()
+
 	}).catch(function (er) {
 		console.log(er)
 	})//c
 
-	var val = ''
-	//assert.ok( val, 'we got something, check console' )
-	done()
+
 })
+}
