@@ -1,17 +1,17 @@
 
-<template id="xchart-el">
+<template id="xfirst-el">
   <style>p { color: orange; }</style>
   <p>I'm Shady</p>
 </template>
 <script>
-  console.log ('in temp chart')
-  class ChartEl extends HTMLElement {
+  console.log('template')
+  class FirstEl extends HTMLElement {
   	constructor() {
   		super()
+  		console.log('first')
   		this._emit = flyd.stream()
-  		console.log('chart cons')
   		let shadowRoot = this.attachShadow({mode: 'open'})
-  		const t = document.querySelector('#xchart-el')
+  		const t = document.querySelector('#xfirst-el')
   		const instance = t.content.cloneNode(true)
   		shadowRoot.appendChild(instance)
   	}//()
