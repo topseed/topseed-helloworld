@@ -4,16 +4,16 @@
   <p>I'm Shady</p>
 </template>
 <script>
-  console.log('template')
   class FirstEl extends HTMLElement {
   	constructor() {
   		super()
-  		console.log('first')
-  		this._emit = flyd.stream()
   		let shadowRoot = this.attachShadow({mode: 'open'})
-  		const t = document.querySelector('#xfirst-el')
+  		const t = document.querySelector('#xfirst-el')// add the dom above
   		const instance = t.content.cloneNode(true)
   		shadowRoot.appendChild(instance)
+  
+  		this._emit = flyd.stream()//proper observer
+  
   	}//()
   
   	tst() {
