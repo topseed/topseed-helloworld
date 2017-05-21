@@ -9,7 +9,7 @@ loadjs.ready(['polyfills', 'keyLibs'], {// loaded setup libs
 			], { success: function(){
 				libsLoaded()
 			}
-	})//loadjs
+		})//loadjs
 	}//suc
 })
 
