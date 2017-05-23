@@ -13,7 +13,6 @@ loadjs.ready(['dependencyIE', 'keyLibs'], {// loaded setup libs
 	}//suc
 })
 
-
 const ROOT = 'http://jsonplaceholder.typicode.com/'
 function tst1() {
 	// class:

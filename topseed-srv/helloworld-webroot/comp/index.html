@@ -39,29 +39,23 @@
     </script>
     <div id="content-wrapper">
       <div class="mui-container-fluid">
-        <p></p>
-        <div id="bind1"></div>
+        <first-el></first-el>
       </div>
-      <script id="exp1Tpl" type="text/x-dot-template">
-        {{~it.array :value:index}}
-        	<div>{{=value}}</div>
-        {{~}}
-        
-      </script>
       <script>
         TS.onAppReady(UIinit)
         function UIinit() {
         	console.log('x')
-        
-        	var tpl1 = document.getElementById('exp1Tpl').text
-        	var tpl1Foo = doT.template(tpl1)
-        	var data = {'array':['banana','apple','orange']}
-        	var res = tpl1Foo(data)
-        	console.log(res)
-        	document.getElementById('bind1').innerHTML = res
-        
+        	//TS.loadComp($('#comps'),'/_webComp/first.html', UIComp1Init)
         }
         
+        function UIComp1Init() {//this does not execute yet
+        	var el = customElements.get('first-el')
+        	if(!el) // if it is not defined, define:
+        		customElements.define('first-el', FirstEl)// loaded w/ template
+        
+        	var m = document.querySelector('first-el')
+        	m.tst() // talk to it
+        }
         
       </script>
     </div>

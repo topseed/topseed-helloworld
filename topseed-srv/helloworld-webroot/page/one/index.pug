@@ -14,16 +14,6 @@ block main
 		TS.onAppReady(UIinit)
 		function UIinit() {
 			console.log('x')
-			//TS.loadComp($('#comps'),'/_webComp/first.html', UIComp1Init)
-		}
-
-		function UIComp1Init() {
-			let el = customElements.get('first-el')
-			if(!el) // if it is not defined, define:
-				customElements.define('first-el', FirstEl)// loaded w/ template
-
-			let m = document.querySelector('first-el')
-			m.tst() // talk to it
 		}
 
 block footer
