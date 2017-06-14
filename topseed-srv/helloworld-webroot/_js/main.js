@@ -13,6 +13,17 @@ loadjs.ready(['polyfills', 'keyLibs'], {// loaded setup libs
 	}//suc
 })
 
+/*
+var TTObj2 = {
+  typ: null
+, $new: null
+, delta: null
+, $html: null
+, err: null
+}
+*/
+
+
 function libsLoaded(){
 	console.log('Loaded libs')
 	
