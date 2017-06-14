@@ -52,7 +52,7 @@ When you edit /web-app/helloworld-webroot/home/story1.md and save, Prepros will 
 Check <https://github.com/topseed/topseed-turbo>, a fork of SmoothState.js, one of our favorite libs.
 Explore <https://zeit.co>, one way to deploy to the web. You deploy the web-app folder after deleting the node_modules folder.
 
-Some other buzwords that resonated with us:
+Some other buzzwords that resonated with us:
 - Serverless
 - SEO/view as bot
 - Sustinable / maintainable
