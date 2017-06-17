@@ -6,5 +6,7 @@
 	, "engines": { "npm" : ">=5", "node": ">=8" }
 	, "dependencies": { 
 		"express": ">=4.1"
+		,"topseed-util": ">=23.9.0",
+
 	}
 }
