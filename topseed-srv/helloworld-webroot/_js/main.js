@@ -1,45 +1,32 @@
-'use strict'
-loadjs.ready(['polyfills', 'keyLibs'], {// loaded setup libs
-	success: function(){
+//requires setup-6.0.js or higher
+var TM = {
 
-		loadjs([
+	loadLibs: function(){
+		console.log('loadLibs called')
 
-			'/_js/vendor/jquery.jsForm.min.js'
+		//most of these could be in cache.mf
+		return Promise.all([
+			TS.load('//cdn.rawgit.com/topseed/topseed-turbo/master/vendor/jquery.jsForm.min.js')
+			, TS.load('//rawgit.com/topseed/topseed-turbo/master/release/topseed-turbo-latest.js')
+		])
+		.then(TM.libsLoaded)
+	}
 
-			], { success: function(){
-				libsLoaded()
+	, libsLoaded: function(){
+		
+		TS.signalAppReady()
+
+		TT.ScontentID = '#content-wrapper'
+		TT.handle(function(evt) {
+			if(TT.PRE == evt.typ)  {
+				//$('#content-wrapper').fadeTo(100,.2)
 			}
-		})//loadjs
-	}//suc
-})
+			if(TT.PAGE == evt.typ)  {
+				$(TT.ScontentID).html(evt.$new)
+			}
+		})
+	}
 
-/*
-var TTObj2 = {
-  typ: null
-, $new: null
-, delta: null
-, $html: null
-, err: null
-}
-*/
+} //class
 
-
-function libsLoaded(){
-	console.log('Loaded libs')
-	
-	TS.signalAppReady()
-
-	TT.ScontentID ='#content-wrapper'
-	TT.handle(function(evt) {
-		console.log(':')
-		if(TT.PRE==evt.typ)  {//start
-			console.log(evt.$new)
-			//$('#content-wrapper').fadeTo(100,.2)
-		}
-		if(TT.PAGE==evt.typ)  {//new pg loaded
-			$(TT.ScontentID).html(evt.$new)
-			//$('#content-wrapper').fadeTo(100,1)
-
-		}
-	})
-}
+TM.loadLibs()
