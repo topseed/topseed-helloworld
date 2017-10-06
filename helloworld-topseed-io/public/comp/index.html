@@ -18,6 +18,7 @@
       <ul id="appbar--menu">
         <li><a href="/page/one/">One</a></li>
         <li><a href="/page/two/">Two</a></li>
+        <li><a href="/page/three/">Three</a></li>
       </ul>
     </div>
     <div id="sidedrawer" onclick="closeDrawer()">
@@ -26,6 +27,7 @@
       <ul id="sidedrawer--menu">
         <li><a href="/page/one/">One</a></li>
         <li><a href="/page/two/">Two</a></li>
+        <li><a href="/page/three/">Three			</a></li>
       </ul>
     </div>
     <script>
@@ -38,13 +40,22 @@
     </script>
     <div id="content-wrapper">
       <div class="mui-container-fluid">
-        <p></p><p>Page One! </p>
-
+        <first-el></first-el>
       </div>
       <script>
         TS.onAppReady(UIinit)
         function UIinit() {
         	console.log('x')
+        	//TS.loadComp($('#comps'),'/_webComp/first.html', UIComp1Init)
+        }
+        
+        function UIComp1Init() {//this does not execute yet
+        	var el = customElements.get('first-el')
+        	if(!el) // if it is not defined, define:
+        		customElements.define('first-el', FirstEl)// loaded w/ template
+        
+        	var m = document.querySelector('first-el')
+        	m.tst() // talk to it
         }
         
       </script>

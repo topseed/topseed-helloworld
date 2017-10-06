@@ -1,13 +1,15 @@
 extends  ../../_part/_baseShell
 
 block head
-	title Page One
+	title Page Three
 	include ../../_part/_header
 
 block main
 	.mui-container-fluid
 		p
-		include _hello.html
+		P Wolfgang's Page Three!
+
+		include _buttons
 
 	script.
 		TS.onAppReady(UIinit)

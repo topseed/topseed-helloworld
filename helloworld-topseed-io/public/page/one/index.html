@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <title>Fullpage Demo</title>
+    <title>Page One</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,9 +10,6 @@
     <script src="//code.jquery.com/jquery-3.2.1.slim.min.js" async></script>
     <script src="//cdn.rawgit.com/topseed/topseed-turbo/master/setup/setup-6.1.js"></script>
     <style>body {opacity: 0.1;}</style>
-    <!--script(src='https://cdn.jsdelivr.net/jquery/3.2.0/jquery.min.js')-->
-    <script href="/_js/vendor/jquery.fullpage.min.js"></script>
-    <link rel="stylesheet" href="/_js/vendor/jquery.fullpage.min.css">
   </head>
   <body>
     <link rel="stylesheet" href="/_sass/main.css">
@@ -21,6 +18,7 @@
       <ul id="appbar--menu">
         <li><a href="/page/one/">One</a></li>
         <li><a href="/page/two/">Two</a></li>
+        <li><a href="/page/three/">Three</a></li>
       </ul>
     </div>
     <div id="sidedrawer" onclick="closeDrawer()">
@@ -29,6 +27,7 @@
       <ul id="sidedrawer--menu">
         <li><a href="/page/one/">One</a></li>
         <li><a href="/page/two/">Two</a></li>
+        <li><a href="/page/three/">Three			</a></li>
       </ul>
     </div>
     <script>
@@ -40,65 +39,14 @@
       }
     </script>
     <div id="content-wrapper">
-      <style>
-        .section {
-        	background-size: cover;
-        	background-attachment: fixed;
-        	background-image: url(res/beach768.jpg);
-        }
-        
-        .section1 {
-        	background-image: url(res/beach768.jpg);
-        }
-        .section2 {
-        	background-image: url(res/city768.jpg);
-        }
-        .section3{
-        	background-image: url(res/light768.jpg);
-        }
-        .section4{
-        	background-image: url(res/road768.jpg);
-        }
-        
-      </style>
-      <div id="fullpage">
-        <div class="section1 section">
-          <div class="mui-container-fluid">
-            <div class="mui-panel">
-              <H3>Section 1. Scroll down for more</H3>
-            </div>
-          </div>
-        </div>
-        <div class="section2 section">
-          <div class="mui-container-fluid">
-            <div class="mui-panel">
-              <H3>Welcome to Section 2</H3>
-            </div>
-          </div>
-        </div>
-        <div class="section3 section">
-          <div class="mui-container-fluid">
-            <div class="mui-panel">
-              <H3>Hi, I'm Section 3. We're friends now.</H3>
-            </div>
-          </div>
-        </div>
-        <div class="section4 section">
-          <div class="mui-container-fluid">
-            <div class="mui-panel">
-              <H3>This is the last Section. Good Bye!</H3>
-            </div>
-          </div>
-        </div>
+      <div class="mui-container-fluid">
+        <p></p><p>Hello Page One! </p>
+
       </div>
       <script>
-        ST.onAppReady(UIinit)
+        TS.onAppReady(UIinit)
         function UIinit() {
-        	console.log('x')
-        	$('#fullpage').fullpage({
-        		//verticalCentered: false,
-        		css3:false
-        	})//config
+        	console.log('page one custom javascript addressing dom here')
         }
         
       </script>

@@ -1,0 +1,19 @@
+extends  ../../_part/_baseShell
+
+block head
+	title Page One
+	include ../../_part/_header
+
+block main
+	.mui-container-fluid
+		p
+		include _hello.html
+
+	script.
+		TS.onAppReady(UIinit)
+		function UIinit() {
+			console.log('page one custom javascript addressing dom here')
+		}
+
+block footer
+	include ../../_part/_footer
